@@ -5,8 +5,8 @@ It runs anywhere: GitHub Pages, Hostinger, GoHighLevel, Netlify and more.
 Just upload this complete folder as-is.
 
 WHAT IS INSIDE
-- index.html — home page (148 products, 13 categories, payment/delivery/support section, FAQ)
-- products/ — a separate SEO page for every product (148 pages)
+- index.html — home page (141 products, 13 categories, payment/delivery/support section, FAQ)
+- products/ — a separate SEO page for every product (141 pages)
 - assets/style.css, assets/app.js — design, plus the currency/search code
 - images/products/ — logos for 76 tools. 74 carry real brand logos (Simple Icons library,
   official site icons and Wikimedia). Only two keep designed monogram logos: the BatmanStore
@@ -15,6 +15,12 @@ WHAT IS INSIDE
   with the same name and rebuild — the site picks it up itself.
 - products-data.json — all product data in one file
 - sitemap.xml + robots.txt — for Google
+
+PRICING (updated 22 Oct 2026 on Daniyal's order)
+New Price = (Old Price / 2) x 1.30 — every price is now 65% of the earlier price.
+PKR is calculated at 1 USD = Rs 280. Near-duplicate packages were merged
+(ChatGPT Plus Gmail/UPI, Prime Video 6 Months, CapCut 7 Days, CapCut 650 Credits,
+and the Manus/Runway/Factory Premium Package duplicates): 148 -> 141 products.
 
 SITE INFORMATION (given by Daniyal, 22 Oct 2026)
 Payment Methods: Easypaisa, JazzCash, SadaPay, PayPal

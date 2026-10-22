@@ -1,6 +1,6 @@
 # Unlock Pro Tools
 
-An online store for premium tools and subscriptions — 148 packages in 13 categories.
+An online store for premium tools and subscriptions — 141 packages in 13 categories.
 Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
 
 **Live demo:** https://daniyalsaffi.github.io/unlock-pro-tools/
@@ -8,7 +8,7 @@ Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
 
 ## What is in this repo
 - `index.html` — home page (all products, categories, search, currency selector, FAQ)
-- `products/` — a separate SEO detail page for every product (148 pages)
+- `products/` — a separate SEO detail page for every product (141 pages)
 - `assets/` — design (style.css) and code (app.js)
 - `images/products/` — a logo for every tool (74 of 76 tools carry real brand logos)
 - `products-data.json` — all product data in one file

@@ -4,9 +4,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro — 18 Months Activation Link",
   "duration": "18 Months",
-  "pkr": "Rs 330",
-  "usd": "1.18",
-  "usdt": "1.18",
+  "pkr": "Rs 216",
+  "usd": "0.77",
+  "usdt": "0.77",
   "details": "Full Google AI Pro plan with 5TB storage. Activation link is included, it activates on your own Google account.",
   "delivery": "Activation link (via WhatsApp)",
   "needs": "Only your Gmail / Google account",
@@ -20,7 +20,7 @@
    "Your own Google on the account activation",
    "18 months long duration"
   ],
-  "pkr_num": "330",
+  "pkr_num": "216",
   "slug": "gemini-google-ai-pro-pro-18-months-activation-link"
  },
  {
@@ -28,9 +28,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro — 18 Months Family Plan",
   "duration": "18 Months",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "Family plan version, 18 months.",
   "delivery": "Activation / invite (via WhatsApp)",
   "needs": "Only your email",
@@ -43,7 +43,7 @@
    "Family plan",
    "18 months duration"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "gemini-google-ai-pro-pro-18-months-family-plan"
  },
  {
@@ -51,9 +51,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro — 18 Months Ready Account (Jio)",
   "duration": "18 Months",
-  "pkr": "Rs 1,680",
-  "usd": "6.00",
-  "usdt": "6.00",
+  "pkr": "Rs 1,092",
+  "usd": "3.90",
+  "usdt": "3.90",
   "details": "A ready account is included, log in and use instantly. 5TB storage included.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -66,7 +66,7 @@
    "5TB storage",
    "Instant login and use"
   ],
-  "pkr_num": "1680",
+  "pkr_num": "1092",
   "slug": "gemini-google-ai-pro-pro-18-months-ready-account-jio"
  },
  {
@@ -74,9 +74,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro — 3 Months Offer Link",
   "duration": "3 Months",
-  "pkr": "Rs 252",
-  "usd": "0.90",
-  "usdt": "0.90",
+  "pkr": "Rs 165",
+  "usd": "0.59",
+  "usdt": "0.59",
   "details": "A short 3-month plan, activated through an offer link. Price is 'from' (starting price).",
   "delivery": "Offer link (via WhatsApp)",
   "needs": "Only your Gmail",
@@ -89,17 +89,17 @@
    "5TB storage",
    "Short 3-month plan"
   ],
-  "pkr_num": "252",
+  "pkr_num": "165",
   "slug": "gemini-google-ai-pro-pro-3-months-offer-link"
  },
  {
   "category": "AI Chatbots & Assistants",
-  "tool": "Google AI Pro",
+  "tool": "Gemini (Google AI Pro)",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 6,720",
-  "usd": "24.00",
-  "usdt": "24.00",
+  "pkr": "Rs 4,368",
+  "usd": "15.60",
+  "usdt": "15.60",
   "details": "A full Google AI Pro plan for one year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -112,19 +112,19 @@
    "12 months duration",
    "Long-term use best for"
   ],
-  "pkr_num": "6720",
-  "slug": "google-ai-pro-pro-12-months"
+  "pkr_num": "4368",
+  "slug": "gemini-google-ai-pro-pro-12-months"
  },
  {
   "category": "AI Chatbots & Assistants",
   "tool": "ChatGPT",
   "package": "Plus — 1 Month (On Your Gmail)",
   "duration": "1 Month",
-  "pkr": "Rs 4,200",
-  "usd": "15.00",
-  "usdt": "15.00",
-  "details": "The Plus plan is added to your own Gmail account. It is activated through Apple Pay.",
-  "delivery": "Activation on your own Gmail",
+  "pkr": "Rs 1,638",
+  "usd": "5.85",
+  "usdt": "5.85",
+  "details": "The Plus plan is added to your own Gmail account. It is activated through Apple Pay or UPI.",
+  "delivery": "",
   "needs": "Only your Gmail",
   "availability": "In Stock",
   "best": true,
@@ -133,42 +133,20 @@
   "features": [
    "GPT Plus full access",
    "On your own Gmail",
-   "1 month plan"
+   "1 month plan",
+   "Budget optionDelivery Type: Apne Gmail par activation"
   ],
-  "pkr_num": "4200",
+  "pkr_num": "1638",
   "slug": "chatgpt-plus-1-month-on-your-gmail"
- },
- {
-  "category": "AI Chatbots & Assistants",
-  "tool": "ChatGPT",
-  "package": "Plus — 1 Month (UPI, On Your Gmail)",
-  "duration": "1 Month",
-  "pkr": "Rs 2,520",
-  "usd": "9.00",
-  "usdt": "9.00",
-  "details": "Plus plan on your own Gmail, UPI payment method activation.",
-  "delivery": "Activation on your own Gmail",
-  "needs": "Only your Gmail",
-  "availability": "In Stock",
-  "best": false,
-  "keywords": "ChatGPT price in Pakistan, buy ChatGPT Pakistan, ChatGPT subscription Pakistan",
-  "logo": "chatgpt.svg",
-  "features": [
-   "GPT Plus full access",
-   "On your own Gmail",
-   "Budget option"
-  ],
-  "pkr_num": "2520",
-  "slug": "chatgpt-plus-1-month-upi-on-your-gmail"
  },
  {
   "category": "AI Chatbots & Assistants",
   "tool": "ChatGPT",
   "package": "Plus — 1 Month (Full Support Package)",
   "duration": "1 Month",
-  "pkr": "Rs 6,009",
-  "usd": "21.46",
-  "usdt": "21.46",
+  "pkr": "Rs 3,906",
+  "usd": "13.95",
+  "usdt": "13.95",
   "details": "Plus plan, Apple Pay activation with premium package.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -181,7 +159,7 @@
    "Apple Pay activation",
    "Premium package"
   ],
-  "pkr_num": "6009",
+  "pkr_num": "3906",
   "slug": "chatgpt-plus-1-month-full-support-package"
  },
  {
@@ -189,9 +167,9 @@
   "tool": "ChatGPT",
   "package": "Plus — 1 Month (Ready Account)",
   "duration": "1 Month",
-  "pkr": "Rs 1,400",
-  "usd": "5.00",
-  "usdt": "5.00",
+  "pkr": "Rs 910",
+  "usd": "3.25",
+  "usdt": "3.25",
   "details": "A ready account is included — with email, password and code, instant login.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -204,7 +182,7 @@
    "Instant login",
    "The cheapest Plus option"
   ],
-  "pkr_num": "1400",
+  "pkr_num": "910",
   "slug": "chatgpt-plus-1-month-ready-account"
  },
  {
@@ -212,9 +190,9 @@
   "tool": "ChatGPT",
   "package": "Plus — 1 Month (Shared Access)",
   "duration": "1 Month",
-  "pkr": "Rs 952",
-  "usd": "3.40",
-  "usdt": "3.40",
+  "pkr": "Rs 619",
+  "usd": "2.21",
+  "usdt": "2.21",
   "details": "Shared access is provided through an extension. The cheapest way to try it.",
   "delivery": "Access details (via WhatsApp)",
   "needs": "Only your email",
@@ -227,7 +205,7 @@
    "Extension based access",
    "1 month"
   ],
-  "pkr_num": "952",
+  "pkr_num": "619",
   "slug": "chatgpt-plus-1-month-shared-access"
  },
  {
@@ -235,9 +213,9 @@
   "tool": "ChatGPT",
   "package": "Plus — 4 Months",
   "duration": "4 Months",
-  "pkr": "Rs 17,875",
-  "usd": "63.84",
-  "usdt": "63.84",
+  "pkr": "Rs 11,620",
+  "usd": "41.50",
+  "usdt": "41.50",
   "details": "4 months of Plus in one go — no repeated renewal hassle.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -250,7 +228,7 @@
    "GPT Plus full access",
    "Long duration"
   ],
-  "pkr_num": "17875",
+  "pkr_num": "11620",
   "slug": "chatgpt-plus-4-months"
  },
  {
@@ -258,9 +236,9 @@
   "tool": "ChatGPT",
   "package": "Go — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 2,744",
-  "usd": "9.80",
-  "usdt": "9.80",
+  "pkr": "Rs 1,784",
+  "usd": "6.37",
+  "usdt": "6.37",
   "details": "ChatGPT Go plan, 1 month.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -273,7 +251,7 @@
    "1 month",
    "Ready account type"
   ],
-  "pkr_num": "2744",
+  "pkr_num": "1784",
   "slug": "chatgpt-go-1-month"
  },
  {
@@ -281,9 +259,9 @@
   "tool": "ChatGPT",
   "package": "Business — 1 Month (Ready Account)",
   "duration": "1 Month",
-  "pkr": "Rs 4,480",
-  "usd": "16.00",
-  "usdt": "16.00",
+  "pkr": "Rs 2,912",
+  "usd": "10.40",
+  "usdt": "10.40",
   "details": "Ready Business plan account — better for team use.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -296,7 +274,7 @@
    "Ready-made account",
    "Team use for"
   ],
-  "pkr_num": "4480",
+  "pkr_num": "2912",
   "slug": "chatgpt-business-1-month-ready-account"
  },
  {
@@ -304,9 +282,9 @@
   "tool": "ChatGPT",
   "package": "Business — Admin Access",
   "duration": "Not Stated",
-  "pkr": "Rs 11,194",
-  "usd": "39.98",
-  "usdt": "39.98",
+  "pkr": "Rs 7,277",
+  "usd": "25.99",
+  "usdt": "25.99",
   "details": "Business plan with admin access — manage your own team yourself.",
   "delivery": "Admin access setup (via WhatsApp)",
   "needs": "Only your email",
@@ -319,7 +297,7 @@
    "Team management",
    "Business features"
   ],
-  "pkr_num": "11194",
+  "pkr_num": "7277",
   "slug": "chatgpt-business-admin-access"
  },
  {
@@ -327,9 +305,9 @@
   "tool": "ChatGPT",
   "package": "K12 Education — 2 Years",
   "duration": "2 Years",
-  "pkr": "Rs 3,220",
-  "usd": "11.50",
-  "usdt": "11.50",
+  "pkr": "Rs 2,094",
+  "usd": "7.48",
+  "usdt": "7.48",
   "details": "K12 education account, for a full 2 years. For students and teachers.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -342,7 +320,7 @@
    "Education account",
    "Buy once, 2 years of peace of mind"
   ],
-  "pkr_num": "3220",
+  "pkr_num": "2094",
   "slug": "chatgpt-k12-education-2-years"
  },
  {
@@ -350,9 +328,9 @@
   "tool": "Claude",
   "package": "Pro — 1 Month (Official Recharge)",
   "duration": "1 Month",
-  "pkr": "Rs 11,900",
-  "usd": "42.50",
-  "usdt": "42.50",
+  "pkr": "Rs 7,734",
+  "usd": "27.62",
+  "usdt": "27.62",
   "details": "Official Claude Pro recharge — the plan is activated on your account the proper way.",
   "delivery": "Recharge on your own account",
   "needs": "Only your Claude account email",
@@ -365,7 +343,7 @@
    "Official recharge",
    "1 month plan"
   ],
-  "pkr_num": "11900",
+  "pkr_num": "7734",
   "slug": "claude-pro-1-month-official-recharge"
  },
  {
@@ -373,9 +351,9 @@
   "tool": "Claude API",
   "package": "$100 API Credit — 30 Days",
   "duration": "30 Days",
-  "pkr": "Rs 840",
-  "usd": "3.00",
-  "usdt": "3.00",
+  "pkr": "Rs 546",
+  "usd": "1.95",
+  "usdt": "1.95",
   "details": "For developers Claude API credit, 30 days valid.",
   "delivery": "API key / credit details (via WhatsApp)",
   "needs": "Only your email",
@@ -388,7 +366,7 @@
    "30 days validity",
    "For developers"
   ],
-  "pkr_num": "840",
+  "pkr_num": "546",
   "slug": "claude-api-100-api-credit-30-days"
  },
  {
@@ -396,9 +374,9 @@
   "tool": "Claude API",
   "package": "$500 API Credit — 30 Days",
   "duration": "30 Days",
-  "pkr": "Rs 3,080",
-  "usd": "11.00",
-  "usdt": "11.00",
+  "pkr": "Rs 2,002",
+  "usd": "7.15",
+  "usdt": "7.15",
   "details": "A big API package, for heavy use and projects.",
   "delivery": "API key / credit details (via WhatsApp)",
   "needs": "Only your email",
@@ -411,7 +389,7 @@
    "30 days validity",
    "For heavy usage"
   ],
-  "pkr_num": "3080",
+  "pkr_num": "2002",
   "slug": "claude-api-500-api-credit-30-days"
  },
  {
@@ -419,9 +397,9 @@
   "tool": "Muse AI",
   "package": "1 Billion Tokens Account",
   "duration": "Tokens Package",
-  "pkr": "Rs 84",
-  "usd": "0.30",
-  "usdt": "0.30",
+  "pkr": "Rs 56",
+  "usd": "0.20",
+  "usdt": "0.20",
   "details": "Muse AI token account — 1 billion tokens package.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -434,7 +412,7 @@
    "Instant activation",
    "The cheapest token pack"
   ],
-  "pkr_num": "84",
+  "pkr_num": "56",
   "slug": "muse-ai-1-billion-tokens-account"
  },
  {
@@ -442,9 +420,9 @@
   "tool": "Muse AI",
   "package": "2 Billion Tokens Account",
   "duration": "Tokens Package",
-  "pkr": "Rs 420",
-  "usd": "1.50",
-  "usdt": "1.50",
+  "pkr": "Rs 274",
+  "usd": "0.98",
+  "usdt": "0.98",
   "details": "Muse AI token account — 2 billion tokens.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -456,7 +434,7 @@
    "2B tokens",
    "For higher usage"
   ],
-  "pkr_num": "420",
+  "pkr_num": "274",
   "slug": "muse-ai-2-billion-tokens-account"
  },
  {
@@ -464,9 +442,9 @@
   "tool": "Muse AI",
   "package": "5 Billion Tokens Account",
   "duration": "Tokens Package",
-  "pkr": "Rs 1,674",
-  "usd": "5.98",
-  "usdt": "5.98",
+  "pkr": "Rs 1,089",
+  "usd": "3.89",
+  "usdt": "3.89",
   "details": "Muse AI token account — a big 5 billion tokens package.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -478,7 +456,7 @@
    "5B tokens",
    "For heavy users"
   ],
-  "pkr_num": "1674",
+  "pkr_num": "1089",
   "slug": "muse-ai-5-billion-tokens-account"
  },
  {
@@ -486,9 +464,9 @@
   "tool": "Muse AI",
   "package": "31 Billion Tokens Account",
   "duration": "Tokens Package",
-  "pkr": "Rs 969",
-  "usd": "3.46",
-  "usdt": "3.46",
+  "pkr": "Rs 630",
+  "usd": "2.25",
+  "usdt": "2.25",
   "details": "Muse AI token account — 31 billion tokens, the biggest value pack.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -501,7 +479,7 @@
    "Best value pack",
    "Heavy usage"
   ],
-  "pkr_num": "969",
+  "pkr_num": "630",
   "slug": "muse-ai-31-billion-tokens-account"
  },
  {
@@ -509,9 +487,9 @@
   "tool": "Grok (SuperGrok)",
   "package": "SuperGrok — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 5,600",
-  "usd": "20.00",
-  "usdt": "20.00",
+  "pkr": "Rs 3,640",
+  "usd": "13.00",
+  "usdt": "13.00",
   "details": "SuperGrok premium plan, 1 month.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -523,7 +501,7 @@
    "SuperGrok full access",
    "1 month plan"
   ],
-  "pkr_num": "5600",
+  "pkr_num": "3640",
   "slug": "grok-supergrok-supergrok-1-month"
  },
  {
@@ -531,9 +509,9 @@
   "tool": "Grok (SuperGrok)",
   "package": "Grok Premium + Cursor Premium — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 9,520",
-  "usd": "34.00",
-  "usdt": "34.00",
+  "pkr": "Rs 6,188",
+  "usd": "22.10",
+  "usdt": "22.10",
   "details": "Two premium tools in one package — Grok Premium and Cursor Premium.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -546,7 +524,7 @@
    "Dono full premium",
    "1 month"
   ],
-  "pkr_num": "9520",
+  "pkr_num": "6188",
   "slug": "grok-supergrok-grok-premium-cursor-premium-1-month"
  },
  {
@@ -554,9 +532,9 @@
   "tool": "Grok (SuperGrok)",
   "package": "Grok Ultra — CDK",
   "duration": "Not Stated",
-  "pkr": "Rs 15,120",
-  "usd": "54.00",
-  "usdt": "54.00",
+  "pkr": "Rs 9,828",
+  "usd": "35.10",
+  "usdt": "35.10",
   "details": "Grok Ultra CDK package. A linked account may also include Cursor and X Premium+ access.",
   "delivery": "CDK details (via WhatsApp)",
   "needs": "Only your email",
@@ -569,7 +547,7 @@
    "CDK type delivery",
    "Bonus linked access"
   ],
-  "pkr_num": "15120",
+  "pkr_num": "9828",
   "slug": "grok-supergrok-grok-ultra-cdk"
  },
  {
@@ -577,9 +555,9 @@
   "tool": "Perplexity",
   "package": "Pro — 12 Months CDK",
   "duration": "12 Months",
-  "pkr": "Rs 10,640",
-  "usd": "38.00",
-  "usdt": "38.00",
+  "pkr": "Rs 6,916",
+  "usd": "24.70",
+  "usdt": "24.70",
   "details": "Perplexity Pro for a full year, CDK delivery.",
   "delivery": "CDK details (via WhatsApp)",
   "needs": "Only your email",
@@ -592,7 +570,7 @@
    "12 months",
    "CDK delivery"
   ],
-  "pkr_num": "10640",
+  "pkr_num": "6916",
   "slug": "perplexity-pro-12-months-cdk"
  },
  {
@@ -600,9 +578,9 @@
   "tool": "Perplexity",
   "package": "Max — 1 Month CDK",
   "duration": "1 Month",
-  "pkr": "Rs 8,400",
-  "usd": "30.00",
-  "usdt": "30.00",
+  "pkr": "Rs 5,460",
+  "usd": "19.50",
+  "usdt": "19.50",
   "details": "Perplexity the top Max plan, 1 month.",
   "delivery": "CDK details (via WhatsApp)",
   "needs": "Only your email",
@@ -615,7 +593,7 @@
    "1 month",
    "CDK delivery"
   ],
-  "pkr_num": "8400",
+  "pkr_num": "5460",
   "slug": "perplexity-max-1-month-cdk"
  },
  {
@@ -623,9 +601,9 @@
   "tool": "Perplexity",
   "package": "Enterprise Pro Seat",
   "duration": "Not Stated",
-  "pkr": "Rs 6,720",
-  "usd": "24.00",
-  "usdt": "24.00",
+  "pkr": "Rs 4,368",
+  "usd": "15.60",
+  "usdt": "15.60",
   "details": "Enterprise Pro seat with admin access.",
   "delivery": "Admin access setup (via WhatsApp)",
   "needs": "Only your email",
@@ -638,7 +616,7 @@
    "Admin access",
    "For the team"
   ],
-  "pkr_num": "6720",
+  "pkr_num": "4368",
   "slug": "perplexity-enterprise-pro-seat"
  },
  {
@@ -646,9 +624,9 @@
   "tool": "Manus AI",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 14,000",
-  "usd": "50.00",
-  "usdt": "50.00",
+  "pkr": "Rs 9,100",
+  "usd": "32.50",
+  "usdt": "32.50",
   "details": "Manus Pro AI agent plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -661,40 +639,17 @@
    "12 months",
    "Long-term package"
   ],
-  "pkr_num": "14000",
+  "pkr_num": "9100",
   "slug": "manus-ai-pro-12-months"
- },
- {
-  "category": "AI Chatbots & Assistants",
-  "tool": "Manus AI",
-  "package": "Pro — 12 Months (Premium Package)",
-  "duration": "12 Months",
-  "pkr": "Rs 36,450",
-  "usd": "130.18",
-  "usdt": "130.18",
-  "details": "Manus Pro premium package, 12 months.",
-  "delivery": "Activation (via WhatsApp)",
-  "needs": "Only your email",
-  "availability": "Limited",
-  "best": false,
-  "keywords": "Manus AI price in Pakistan, buy Manus AI Pakistan, Manus AI subscription Pakistan",
-  "logo": "manus-ai.svg",
-  "features": [
-   "Premium package",
-   "12 months",
-   "Full features"
-  ],
-  "pkr_num": "36450",
-  "slug": "manus-ai-pro-12-months-premium-package"
  },
  {
   "category": "AI Video & Image Tools",
   "tool": "Kling AI",
   "package": "Standard — 1 Month (700–1000 Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 2,632",
-  "usd": "9.40",
-  "usdt": "9.40",
+  "pkr": "Rs 1,711",
+  "usd": "6.11",
+  "usdt": "6.11",
   "details": "Kling AI Standard plan, for making videos 700–1000 credits.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -707,7 +662,7 @@
    "AI video generation",
    "1 month plan"
   ],
-  "pkr_num": "2632",
+  "pkr_num": "1711",
   "slug": "kling-ai-standard-1-month-7001000-credits"
  },
  {
@@ -715,9 +670,9 @@
   "tool": "Kling AI",
   "package": "Standard — 1 Month (1000+ Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 3,640",
-  "usd": "13.00",
-  "usdt": "13.00",
+  "pkr": "Rs 2,366",
+  "usd": "8.45",
+  "usdt": "8.45",
   "details": "Standard plan 1000+ credits included.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -730,7 +685,7 @@
    "AI video generation",
    "1 month"
   ],
-  "pkr_num": "3640",
+  "pkr_num": "2366",
   "slug": "kling-ai-standard-1-month-1000-credits"
  },
  {
@@ -738,9 +693,9 @@
   "tool": "Kling AI",
   "package": "Pro — 1 Month (3700–4000 Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 12,018",
-  "usd": "42.92",
-  "usdt": "42.92",
+  "pkr": "Rs 7,812",
+  "usd": "27.90",
+  "usdt": "27.90",
   "details": "Kling Pro plan, heavy video work for 3700–4000 credits.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -753,7 +708,7 @@
    "Pro quality",
    "Heavy usage"
   ],
-  "pkr_num": "12018",
+  "pkr_num": "7812",
   "slug": "kling-ai-pro-1-month-37004000-credits"
  },
  {
@@ -761,9 +716,9 @@
   "tool": "Runway",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 16,800",
-  "usd": "60.00",
-  "usdt": "60.00",
+  "pkr": "Rs 10,920",
+  "usd": "39.00",
+  "usdt": "39.00",
   "details": "Runway Pro AI video editor, a full year.",
   "delivery": "Activation code (via WhatsApp)",
   "needs": "Only your email",
@@ -776,40 +731,17 @@
    "12 months",
    "AI editing features"
   ],
-  "pkr_num": "16800",
+  "pkr_num": "10920",
   "slug": "runway-pro-12-months"
- },
- {
-  "category": "AI Video & Image Tools",
-  "tool": "Runway",
-  "package": "Pro — 12 Months (Premium Package)",
-  "duration": "12 Months",
-  "pkr": "Rs 33,600",
-  "usd": "120.00",
-  "usdt": "120.00",
-  "details": "Runway Pro premium package, 12 months.",
-  "delivery": "Activation code (via WhatsApp)",
-  "needs": "Only your email",
-  "availability": "Limited",
-  "best": false,
-  "keywords": "Runway price in Pakistan, buy Runway Pakistan, Runway subscription Pakistan",
-  "logo": "runway.svg",
-  "features": [
-   "Premium package",
-   "12 months",
-   "Full Pro features"
-  ],
-  "pkr_num": "33600",
-  "slug": "runway-pro-12-months-premium-package"
  },
  {
   "category": "AI Video & Image Tools",
   "tool": "Higgsfield AI",
   "package": "Starter — 200 Credits, 30 Days",
   "duration": "30 Days",
-  "pkr": "Rs 2,912",
-  "usd": "10.40",
-  "usdt": "10.40",
+  "pkr": "Rs 1,893",
+  "usd": "6.76",
+  "usdt": "6.76",
   "details": "Higgsfield Starter package with 200 credits — best to get started.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -822,7 +754,7 @@
    "30 days",
    "AI video effects"
   ],
-  "pkr_num": "2912",
+  "pkr_num": "1893",
   "slug": "higgsfield-ai-starter-200-credits-30-days"
  },
  {
@@ -830,9 +762,9 @@
   "tool": "Higgsfield AI",
   "package": "Pro — 1 Year",
   "duration": "1 Year",
-  "pkr": "Rs 67,200",
-  "usd": "240.00",
-  "usdt": "240.00",
+  "pkr": "Rs 43,680",
+  "usd": "156.00",
+  "usdt": "156.00",
   "details": "Higgsfield Pro a full year, for professional video work.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -845,7 +777,7 @@
    "1 year",
    "Professional use"
   ],
-  "pkr_num": "67200",
+  "pkr_num": "43680",
   "slug": "higgsfield-ai-pro-1-year"
  },
  {
@@ -853,9 +785,9 @@
   "tool": "Veo3 (Google)",
   "package": "Ultra — 25K Credits",
   "duration": "Credits Package",
-  "pkr": "Rs 1,680",
-  "usd": "6.00",
-  "usdt": "6.00",
+  "pkr": "Rs 1,092",
+  "usd": "3.90",
+  "usdt": "3.90",
   "details": "Veo3 Ultra — 25,000 credits. Google's top AI video generation.",
   "delivery": "Credits / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -868,7 +800,7 @@
    "Ultra quality video",
    "Google Veo3"
   ],
-  "pkr_num": "1680",
+  "pkr_num": "1092",
   "slug": "veo3-google-ultra-25k-credits"
  },
  {
@@ -876,9 +808,9 @@
   "tool": "Supercut",
   "package": "Pro — 10 Seats, 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 2,520",
-  "usd": "9.00",
-  "usdt": "9.00",
+  "pkr": "Rs 1,638",
+  "usd": "5.85",
+  "usdt": "5.85",
   "details": "Supercut Pro, 10 seats for a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -891,19 +823,19 @@
    "12 months",
    "Team use"
   ],
-  "pkr_num": "2520",
+  "pkr_num": "1638",
   "slug": "supercut-pro-10-seats-12-months"
  },
  {
   "category": "Video Editing",
   "tool": "CapCut",
-  "package": "Pro — 7 Days",
+  "package": "Pro — 7 Days (1200 Credits)",
   "duration": "7 Days",
-  "pkr": "Rs 151",
-  "usd": "0.54",
-  "usdt": "0.54",
+  "pkr": "Rs 98",
+  "usd": "0.35",
+  "usdt": "0.35",
   "details": "CapCut Pro for only 7 days — the cheapest way to try it or for short work.",
-  "delivery": "Activation (via WhatsApp)",
+  "delivery": "",
   "needs": "Only your email",
   "availability": "In Stock",
   "best": false,
@@ -912,32 +844,10 @@
   "features": [
    "Full Pro features",
    "7 days",
-   "The most low price"
+   "The most low price",
+   "1200 AI creditsDelivery Type: Activation (via WhatsApp)"
   ],
-  "pkr_num": "151",
-  "slug": "capcut-pro-7-days"
- },
- {
-  "category": "Video Editing",
-  "tool": "CapCut",
-  "package": "Pro — 7 Days (1200 Credits)",
-  "duration": "7 Days",
-  "pkr": "Rs 168",
-  "usd": "0.60",
-  "usdt": "0.60",
-  "details": "7 days plan 1200 AI credits included.",
-  "delivery": "Activation (via WhatsApp)",
-  "needs": "Only your email",
-  "availability": "In Stock",
-  "best": false,
-  "keywords": "CapCut price in Pakistan, buy CapCut Pakistan, CapCut subscription Pakistan",
-  "logo": "capcut.svg",
-  "features": [
-   "1200 AI credits",
-   "Full Pro features",
-   "7 days"
-  ],
-  "pkr_num": "168",
+  "pkr_num": "98",
   "slug": "capcut-pro-7-days-1200-credits"
  },
  {
@@ -945,9 +855,9 @@
   "tool": "CapCut",
   "package": "Pro Individual — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 582",
-  "usd": "2.08",
-  "usdt": "2.08",
+  "pkr": "Rs 378",
+  "usd": "1.35",
+  "usdt": "1.35",
   "details": "An individual Pro plan only for you — no sharing, the whole account is yours.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -960,7 +870,7 @@
    "Full Pro features",
    "1 month"
   ],
-  "pkr_num": "582",
+  "pkr_num": "378",
   "slug": "capcut-pro-individual-1-month"
  },
  {
@@ -968,9 +878,9 @@
   "tool": "CapCut",
   "package": "Pro Individual — 1 Month (1200 Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 728",
-  "usd": "2.60",
-  "usdt": "2.60",
+  "pkr": "Rs 473",
+  "usd": "1.69",
+  "usdt": "1.69",
   "details": "Individual plan with 1200 credits. Works on both PC and phone.",
   "delivery": "Ready private account (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -983,19 +893,19 @@
    "PC + phone on both",
    "Private account"
   ],
-  "pkr_num": "728",
+  "pkr_num": "473",
   "slug": "capcut-pro-individual-1-month-1200-credits"
  },
  {
   "category": "Video Editing",
   "tool": "CapCut",
-  "package": "Pro Individual — 1 Month (650 Credits)",
+  "package": "Pro — 1 Month (650 Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 778",
-  "usd": "2.78",
-  "usdt": "2.78",
+  "pkr": "Rs 507",
+  "usd": "1.81",
+  "usdt": "1.81",
   "details": "Individual Pro plan, 650 credits included.",
-  "delivery": "Activation (via WhatsApp)",
+  "delivery": "",
   "needs": "Only your email",
   "availability": "In Stock",
   "best": false,
@@ -1004,19 +914,21 @@
   "features": [
    "650 credits",
    "Individual plan",
-   "1 month"
+   "1 month",
+   "Team plan",
+   "2 devices loginDelivery Type: Activation (via WhatsApp)"
   ],
-  "pkr_num": "778",
-  "slug": "capcut-pro-individual-1-month-650-credits"
+  "pkr_num": "507",
+  "slug": "capcut-pro-1-month-650-credits"
  },
  {
   "category": "Video Editing",
   "tool": "CapCut",
   "package": "Pro — 1 Month (1600 AI Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 890",
-  "usd": "3.18",
-  "usdt": "3.18",
+  "pkr": "Rs 580",
+  "usd": "2.07",
+  "usdt": "2.07",
   "details": "1 month Pro plan the highest 1600 AI credits included.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1029,7 +941,7 @@
    "Full Pro features",
    "1 month"
   ],
-  "pkr_num": "890",
+  "pkr_num": "580",
   "slug": "capcut-pro-1-month-1600-ai-credits"
  },
  {
@@ -1037,9 +949,9 @@
   "tool": "CapCut",
   "package": "Pro Private Team — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 750",
-  "usd": "2.68",
-  "usdt": "2.68",
+  "pkr": "Rs 487",
+  "usd": "1.74",
+  "usdt": "1.74",
   "details": "Private Team account — scan the QR in the mobile app first, then log in on desktop. Up to 2 devices.",
   "delivery": "QR login details (via WhatsApp)",
   "needs": "Only your email",
@@ -1052,40 +964,17 @@
    "QR code login",
    "2 devices"
   ],
-  "pkr_num": "750",
+  "pkr_num": "487",
   "slug": "capcut-pro-private-team-1-month"
- },
- {
-  "category": "Video Editing",
-  "tool": "CapCut",
-  "package": "Pro Team — 1 Month (650 Credits)",
-  "duration": "1 Month",
-  "pkr": "Rs 778",
-  "usd": "2.78",
-  "usdt": "2.78",
-  "details": "Team plan 650 credits included, 2 device login, mail + password format.",
-  "delivery": "Mail + password (via WhatsApp)",
-  "needs": "Nothing needed — you get ready details",
-  "availability": "In Stock",
-  "best": false,
-  "keywords": "CapCut price in Pakistan, buy CapCut Pakistan, CapCut subscription Pakistan",
-  "logo": "capcut.svg",
-  "features": [
-   "Team plan",
-   "650 credits",
-   "2 devices login"
-  ],
-  "pkr_num": "778",
-  "slug": "capcut-pro-team-1-month-650-credits"
  },
  {
   "category": "Video Editing",
   "tool": "CapCut",
   "package": "Pro Admin Team — 1 Month (5 Seats)",
   "duration": "1 Month",
-  "pkr": "Rs 4,200",
-  "usd": "15.00",
-  "usdt": "15.00",
+  "pkr": "Rs 2,730",
+  "usd": "9.75",
+  "usdt": "9.75",
   "details": "Admin team package — 5 seats, invite your own team yourself.",
   "delivery": "Admin access + invite link (via WhatsApp)",
   "needs": "Only your email",
@@ -1098,7 +987,7 @@
    "Admin control",
    "Email invite se team add"
   ],
-  "pkr_num": "4200",
+  "pkr_num": "2730",
   "slug": "capcut-pro-admin-team-1-month-5-seats"
  },
  {
@@ -1106,9 +995,9 @@
   "tool": "CapCut",
   "package": "Pro — 35 Days",
   "duration": "35 Days",
-  "pkr": "Rs 392",
-  "usd": "1.40",
-  "usdt": "1.40",
+  "pkr": "Rs 255",
+  "usd": "0.91",
+  "usdt": "0.91",
   "details": "A little over a month — a 35-day Pro plan.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1120,7 +1009,7 @@
    "35 days duration",
    "Full Pro features"
   ],
-  "pkr_num": "392",
+  "pkr_num": "255",
   "slug": "capcut-pro-35-days"
  },
  {
@@ -1128,9 +1017,9 @@
   "tool": "CapCut",
   "package": "Pro — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 1,938",
-  "usd": "6.92",
-  "usdt": "6.92",
+  "pkr": "Rs 1,260",
+  "usd": "4.50",
+  "usdt": "4.50",
   "details": "3-month Pro plan — no hassle of buying again and again.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1142,7 +1031,7 @@
    "3 months",
    "Full Pro features"
   ],
-  "pkr_num": "1938",
+  "pkr_num": "1260",
   "slug": "capcut-pro-3-months"
  },
  {
@@ -1150,9 +1039,9 @@
   "tool": "CapCut",
   "package": "Pro Individual — 6 Months",
   "duration": "6 Months",
-  "pkr": "Rs 6,160",
-  "usd": "22.00",
-  "usdt": "22.00",
+  "pkr": "Rs 4,004",
+  "usd": "14.30",
+  "usdt": "14.30",
   "details": "Individual Pro plan a full 6 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1165,7 +1054,7 @@
    "6 months",
    "Long duration"
   ],
-  "pkr_num": "6160",
+  "pkr_num": "4004",
   "slug": "capcut-pro-individual-6-months"
  },
  {
@@ -1173,9 +1062,9 @@
   "tool": "CapCut",
   "package": "Pro — 12 Months (1600 AI Credits)",
   "duration": "12 Months",
-  "pkr": "Rs 13,994",
-  "usd": "49.98",
-  "usdt": "49.98",
+  "pkr": "Rs 9,097",
+  "usd": "32.49",
+  "usdt": "32.49",
   "details": "A full year CapCut Pro, 1600 AI credits included.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1188,7 +1077,7 @@
    "1600 AI credits",
    "Full Pro features"
   ],
-  "pkr_num": "13994",
+  "pkr_num": "9097",
   "slug": "capcut-pro-12-months-1600-ai-credits"
  },
  {
@@ -1196,9 +1085,9 @@
   "tool": "ElevenLabs",
   "package": "Creator — 1 Month (Coupon Code)",
   "duration": "1 Month",
-  "pkr": "Rs 1,114",
-  "usd": "3.98",
-  "usdt": "3.98",
+  "pkr": "Rs 725",
+  "usd": "2.59",
+  "usdt": "2.59",
   "details": "Creator plan coupon code — redeem it yourself on your own account.",
   "delivery": "Coupon code (via WhatsApp)",
   "needs": "Only your ElevenLabs email",
@@ -1211,7 +1100,7 @@
    "Coupon code delivery",
    "Redeem on your own account"
   ],
-  "pkr_num": "1114",
+  "pkr_num": "725",
   "slug": "elevenlabs-creator-1-month-coupon-code"
  },
  {
@@ -1219,9 +1108,9 @@
   "tool": "ElevenLabs",
   "package": "Creator — 1 Month (Account)",
   "duration": "1 Month",
-  "pkr": "Rs 2,134",
-  "usd": "7.62",
-  "usdt": "7.62",
+  "pkr": "Rs 1,386",
+  "usd": "4.95",
+  "usdt": "4.95",
   "details": "Creator plan ready account, in mail + password format.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -1234,7 +1123,7 @@
    "Mail + password",
    "Instant use"
   ],
-  "pkr_num": "2134",
+  "pkr_num": "1386",
   "slug": "elevenlabs-creator-1-month-account"
  },
  {
@@ -1242,9 +1131,9 @@
   "tool": "ElevenLabs",
   "package": "Creator — 1 Month (131K Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 3,080",
-  "usd": "11.00",
-  "usdt": "11.00",
+  "pkr": "Rs 2,002",
+  "usd": "7.15",
+  "usdt": "7.15",
   "details": "Creator account 131,000 credits included — for heavy voice work.",
   "delivery": "Account / link (via WhatsApp)",
   "needs": "Only your email",
@@ -1257,7 +1146,7 @@
    "Creator plan",
    "Heavy usage"
   ],
-  "pkr_num": "3080",
+  "pkr_num": "2002",
   "slug": "elevenlabs-creator-1-month-131k-credits"
  },
  {
@@ -1265,9 +1154,9 @@
   "tool": "ElevenLabs",
   "package": "Creator — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 3,914",
-  "usd": "13.98",
-  "usdt": "13.98",
+  "pkr": "Rs 2,545",
+  "usd": "9.09",
+  "usdt": "9.09",
   "details": "Creator plan for a full 3 months.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1279,7 +1168,7 @@
    "3 months duration",
    "Creator features"
   ],
-  "pkr_num": "3914",
+  "pkr_num": "2545",
   "slug": "elevenlabs-creator-3-months"
  },
  {
@@ -1287,9 +1176,9 @@
   "tool": "ElevenLabs",
   "package": "Free — 10K Credits",
   "duration": "Credits Package",
-  "pkr": "Rs 162",
-  "usd": "0.58",
-  "usdt": "0.58",
+  "pkr": "Rs 106",
+  "usd": "0.38",
+  "usdt": "0.38",
   "details": "A small trial package — 10,000 free credits.",
   "delivery": "Credits details (via WhatsApp)",
   "needs": "Only your email",
@@ -1302,7 +1191,7 @@
    "Best to try",
    "A very low price"
   ],
-  "pkr_num": "162",
+  "pkr_num": "106",
   "slug": "elevenlabs-free-10k-credits"
  },
  {
@@ -1310,9 +1199,9 @@
   "tool": "Eleven Reader",
   "package": "Ultra — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 980",
-  "usd": "3.50",
-  "usdt": "3.50",
+  "pkr": "Rs 636",
+  "usd": "2.27",
+  "usdt": "2.27",
   "details": "Eleven Reader Ultra plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1325,7 +1214,7 @@
    "12 months",
    "Audio books / reading"
   ],
-  "pkr_num": "980",
+  "pkr_num": "636",
   "slug": "eleven-reader-ultra-12-months"
  },
  {
@@ -1333,9 +1222,9 @@
   "tool": "Netflix",
   "package": "Premium 4K — 1 Month (Slot)",
   "duration": "1 Month",
-  "pkr": "Rs 896",
-  "usd": "3.20",
-  "usdt": "3.20",
+  "pkr": "Rs 582",
+  "usd": "2.08",
+  "usdt": "2.08",
   "details": "Netflix 4K UHD slot, 1 month, global.",
   "delivery": "Slot login details (via WhatsApp)",
   "needs": "Nothing needed — you get the details",
@@ -1348,7 +1237,7 @@
    "1 month",
    "Global slot"
   ],
-  "pkr_num": "896",
+  "pkr_num": "582",
   "slug": "netflix-premium-4k-1-month-slot"
  },
  {
@@ -1356,9 +1245,9 @@
   "tool": "Netflix",
   "package": "Premium 4K — 30 Days (Premium Package)",
   "duration": "30 Days",
-  "pkr": "Rs 1,294",
-  "usd": "4.62",
-  "usdt": "4.62",
+  "pkr": "Rs 840",
+  "usd": "3.00",
+  "usdt": "3.00",
   "details": "Netflix Premium 4K — 30-day premium package.",
   "delivery": "Login details (via WhatsApp)",
   "needs": "Nothing needed — you get the details",
@@ -1371,7 +1260,7 @@
    "30 days",
    "Premium package"
   ],
-  "pkr_num": "1294",
+  "pkr_num": "840",
   "slug": "netflix-premium-4k-30-days-premium-package"
  },
  {
@@ -1379,9 +1268,9 @@
   "tool": "YouTube Premium",
   "package": "Premium — 3 Months (Link)",
   "duration": "3 Months",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "YouTube Premium 3 months — ads-free videos and background play.",
   "delivery": "Premium link (via WhatsApp)",
   "needs": "Only your Gmail",
@@ -1394,7 +1283,7 @@
    "Background play",
    "3 months link"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "youtube-premium-premium-3-months-link"
  },
  {
@@ -1402,9 +1291,9 @@
   "tool": "YouTube Premium",
   "package": "Premium — 1 Year",
   "duration": "1 Year",
-  "pkr": "Rs 16,800",
-  "usd": "60.00",
-  "usdt": "60.00",
+  "pkr": "Rs 10,920",
+  "usd": "39.00",
+  "usdt": "39.00",
   "details": "A full year YouTube Premium, buy once a full year of peace of mind.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your Gmail",
@@ -1417,19 +1306,19 @@
    "Ads-free",
    "One-year package"
   ],
-  "pkr_num": "16800",
+  "pkr_num": "10920",
   "slug": "youtube-premium-premium-1-year"
  },
  {
   "category": "Streaming & Entertainment",
   "tool": "Amazon Prime Video",
-  "package": "Prime Video — 6 Months",
+  "package": "Prime Video — 6 Months (6 Profiles)",
   "duration": "6 Months",
-  "pkr": "Rs 840",
-  "usd": "3.00",
-  "usdt": "3.00",
+  "pkr": "Rs 546",
+  "usd": "1.95",
+  "usdt": "1.95",
   "details": "Prime Video 6 months.",
-  "delivery": "Account / activation (via WhatsApp)",
+  "delivery": "",
   "needs": "Only your email",
   "availability": "In Stock",
   "best": false,
@@ -1437,42 +1326,21 @@
   "logo": "amazon-prime-video.svg",
   "features": [
    "6 months",
-   "Movies and shows"
-  ],
-  "pkr_num": "840",
-  "slug": "amazon-prime-video-prime-video-6-months"
- },
- {
-  "category": "Streaming & Entertainment",
-  "tool": "Amazon Prime Video",
-  "package": "Ultra — 6 Months (6 Profiles)",
-  "duration": "6 Months",
-  "pkr": "Rs 840",
-  "usd": "3.00",
-  "usdt": "3.00",
-  "details": "Ultra package 6 profiles with — for the whole family.",
-  "delivery": "Account details (via WhatsApp)",
-  "needs": "Only your email",
-  "availability": "In Stock",
-  "best": false,
-  "keywords": "Amazon Prime Video price in Pakistan, buy Amazon Prime Video Pakistan, Amazon Prime Video subscription Pakistan",
-  "logo": "amazon-prime-video.svg",
-  "features": [
+   "Movies and shows",
    "6 profiles",
-   "6 months",
-   "Best for the family"
+   "Best for the familyDelivery Type: Account / activation (via WhatsApp)"
   ],
-  "pkr_num": "840",
-  "slug": "amazon-prime-video-ultra-6-months-6-profiles"
+  "pkr_num": "546",
+  "slug": "amazon-prime-video-prime-video-6-months-6-profiles"
  },
  {
   "category": "Streaming & Entertainment",
   "tool": "Crunchyroll",
   "package": "Premium — 1 Month (Link)",
   "duration": "1 Month",
-  "pkr": "Rs 330",
-  "usd": "1.18",
-  "usdt": "1.18",
+  "pkr": "Rs 216",
+  "usd": "0.77",
+  "usdt": "0.77",
   "details": "Crunchyroll Premium anime streaming, 1 month link.",
   "delivery": "Premium link (via WhatsApp)",
   "needs": "Only your email",
@@ -1485,7 +1353,7 @@
    "1 month",
    "Link delivery"
   ],
-  "pkr_num": "330",
+  "pkr_num": "216",
   "slug": "crunchyroll-premium-1-month-link"
  },
  {
@@ -1493,9 +1361,9 @@
   "tool": "Spotify",
   "package": "Premium — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "Spotify Premium 1 month — ads-free music.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your Spotify email",
@@ -1508,7 +1376,7 @@
    "1 month",
    "Premium features"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "spotify-premium-1-month"
  },
  {
@@ -1516,9 +1384,9 @@
   "tool": "Spotify",
   "package": "Premium — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 1,680",
-  "usd": "6.00",
-  "usdt": "6.00",
+  "pkr": "Rs 1,092",
+  "usd": "3.90",
+  "usdt": "3.90",
   "details": "Spotify Premium for a full 3 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your Spotify email",
@@ -1530,7 +1398,7 @@
    "3 months",
    "Ads-free music"
   ],
-  "pkr_num": "1680",
+  "pkr_num": "1092",
   "slug": "spotify-premium-3-months"
  },
  {
@@ -1538,9 +1406,9 @@
   "tool": "Apple Music",
   "package": "Premium — 5 Months",
   "duration": "5 Months",
-  "pkr": "Rs 280",
-  "usd": "1.00",
-  "usdt": "1.00",
+  "pkr": "Rs 182",
+  "usd": "0.65",
+  "usdt": "0.65",
   "details": "Apple Music Premium 5 months at a very low price.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1553,7 +1421,7 @@
    "Premium music",
    "Low price"
   ],
-  "pkr_num": "280",
+  "pkr_num": "182",
   "slug": "apple-music-premium-5-months"
  },
  {
@@ -1561,9 +1429,9 @@
   "tool": "Microsoft 365",
   "package": "Office 365 Plus — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 672",
-  "usd": "2.40",
-  "usdt": "2.40",
+  "pkr": "Rs 437",
+  "usd": "1.56",
+  "usdt": "1.56",
   "details": "Office 365 Plus account for a full year.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -1576,7 +1444,7 @@
    "12 months",
    "Ready account"
   ],
-  "pkr_num": "672",
+  "pkr_num": "437",
   "slug": "microsoft-365-office-365-plus-12-months"
  },
  {
@@ -1584,9 +1452,9 @@
   "tool": "Microsoft 365",
   "package": "365 Admin — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 4,480",
-  "usd": "16.00",
-  "usdt": "16.00",
+  "pkr": "Rs 2,912",
+  "usd": "10.40",
+  "usdt": "10.40",
   "details": "Microsoft 365 Admin account — your team's accounts create yourself.",
   "delivery": "Admin account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -1599,7 +1467,7 @@
    "12 months",
    "Team management"
   ],
-  "pkr_num": "4480",
+  "pkr_num": "2912",
   "slug": "microsoft-365-365-admin-12-months"
  },
  {
@@ -1607,9 +1475,9 @@
   "tool": "Microsoft 365",
   "package": "365 Family — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 6,720",
-  "usd": "24.00",
-  "usdt": "24.00",
+  "pkr": "Rs 4,368",
+  "usd": "15.60",
+  "usdt": "15.60",
   "details": "Microsoft 365 Family plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1622,7 +1490,7 @@
    "12 months",
    "Sab Office apps"
   ],
-  "pkr_num": "6720",
+  "pkr_num": "4368",
   "slug": "microsoft-365-365-family-12-months"
  },
  {
@@ -1630,9 +1498,9 @@
   "tool": "Microsoft Office",
   "package": "Office 2024 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "Office 2024 Professional genuine-style key — activate once.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1645,7 +1513,7 @@
    "Office 2024 Pro",
    "One-time payment"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "microsoft-office-office-2024-pro-key"
  },
  {
@@ -1653,9 +1521,9 @@
   "tool": "Microsoft Office",
   "package": "Office 2021 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 330",
-  "usd": "1.18",
-  "usdt": "1.18",
+  "pkr": "Rs 216",
+  "usd": "0.77",
+  "usdt": "0.77",
   "details": "Office 2021 Professional key.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1667,7 +1535,7 @@
    "Lifetime key",
    "Office 2021 Pro"
   ],
-  "pkr_num": "330",
+  "pkr_num": "216",
   "slug": "microsoft-office-office-2021-pro-key"
  },
  {
@@ -1675,9 +1543,9 @@
   "tool": "Microsoft Office",
   "package": "Office 2019 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 330",
-  "usd": "1.18",
-  "usdt": "1.18",
+  "pkr": "Rs 216",
+  "usd": "0.77",
+  "usdt": "0.77",
   "details": "Office 2019 Professional key.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1689,7 +1557,7 @@
    "Lifetime key",
    "Office 2019 Pro"
   ],
-  "pkr_num": "330",
+  "pkr_num": "216",
   "slug": "microsoft-office-office-2019-pro-key"
  },
  {
@@ -1697,9 +1565,9 @@
   "tool": "Microsoft Office",
   "package": "Office 2016 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Office 2016 Professional key, the cheapest.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1711,7 +1579,7 @@
    "Lifetime key",
    "Office 2016 Pro"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "microsoft-office-office-2016-pro-key"
  },
  {
@@ -1719,9 +1587,9 @@
   "tool": "Microsoft Office",
   "package": "Office 2010 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Office 2010 Professional key.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1733,7 +1601,7 @@
    "Lifetime key",
    "Office 2010 Pro"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "microsoft-office-office-2010-pro-key"
  },
  {
@@ -1741,9 +1609,9 @@
   "tool": "Windows",
   "package": "Windows 11 / 10 Pro — Key",
   "duration": "Lifetime Key",
-  "pkr": "Rs 672",
-  "usd": "2.40",
-  "usdt": "2.40",
+  "pkr": "Rs 437",
+  "usd": "1.56",
+  "usdt": "1.56",
   "details": "Windows 11 or 10 Pro activation key.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -1756,7 +1624,7 @@
    "Pro version",
    "One-time payment"
   ],
-  "pkr_num": "672",
+  "pkr_num": "437",
   "slug": "windows-windows-11-10-pro-key"
  },
  {
@@ -1764,9 +1632,9 @@
   "tool": "Notion",
   "package": "Plus — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 218",
-  "usd": "0.78",
-  "usdt": "0.78",
+  "pkr": "Rs 143",
+  "usd": "0.51",
+  "usdt": "0.51",
   "details": "Notion Plus plan a full year, at a very low price.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your Notion email",
@@ -1779,7 +1647,7 @@
    "12 months",
    "For notes and projects"
   ],
-  "pkr_num": "218",
+  "pkr_num": "143",
   "slug": "notion-plus-12-months"
  },
  {
@@ -1787,9 +1655,9 @@
   "tool": "Notion",
   "package": "Business — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 420",
-  "usd": "1.50",
-  "usdt": "1.50",
+  "pkr": "Rs 274",
+  "usd": "0.98",
+  "usdt": "0.98",
   "details": "Notion Business plan 3 months. Price is 'from' (starting price).",
   "delivery": "Activation link (via WhatsApp)",
   "needs": "Only your email",
@@ -1802,7 +1670,7 @@
    "3 months",
    "Team workspace"
   ],
-  "pkr_num": "420",
+  "pkr_num": "274",
   "slug": "notion-business-3-months"
  },
  {
@@ -1810,9 +1678,9 @@
   "tool": "Notion",
   "package": "Business — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 6,720",
-  "usd": "24.00",
-  "usdt": "24.00",
+  "pkr": "Rs 4,368",
+  "usd": "15.60",
+  "usdt": "15.60",
   "details": "Notion Business a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1825,7 +1693,7 @@
    "12 months",
    "For the team"
   ],
-  "pkr_num": "6720",
+  "pkr_num": "4368",
   "slug": "notion-business-12-months"
  },
  {
@@ -1833,9 +1701,9 @@
   "tool": "Notion",
   "package": "Edu Plus — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "Notion Edu Plus plan for students, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1848,7 +1716,7 @@
    "12 months",
    "Best for students"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "notion-edu-plus-12-months"
  },
  {
@@ -1856,9 +1724,9 @@
   "tool": "Grammarly",
   "package": "Pro — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 840",
-  "usd": "3.00",
-  "usdt": "3.00",
+  "pkr": "Rs 546",
+  "usd": "1.95",
+  "usdt": "1.95",
   "details": "Grammarly Pro ready-made account — for English writing, grammar and AI features.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -1871,7 +1739,7 @@
    "AI writing help",
    "Ready-made account"
   ],
-  "pkr_num": "840",
+  "pkr_num": "546",
   "slug": "grammarly-pro-3-months"
  },
  {
@@ -1879,9 +1747,9 @@
   "tool": "Grammarly",
   "package": "Edu (AI) — 6 Months",
   "duration": "6 Months",
-  "pkr": "Rs 2,520",
-  "usd": "9.00",
-  "usdt": "9.00",
+  "pkr": "Rs 1,638",
+  "usd": "5.85",
+  "usdt": "5.85",
   "details": "Grammarly Edu plan AI features with, 6 months.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -1894,7 +1762,7 @@
    "AI features included",
    "6 months"
   ],
-  "pkr_num": "2520",
+  "pkr_num": "1638",
   "slug": "grammarly-edu-ai-6-months"
  },
  {
@@ -1902,9 +1770,9 @@
   "tool": "iLovePDF",
   "package": "Premium — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "iLovePDF Premium — all the tools to edit, convert and sign PDFs.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1916,7 +1784,7 @@
    "Sab PDF tools unlock",
    "12 months"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "ilovepdf-premium-12-months"
  },
  {
@@ -1924,9 +1792,9 @@
   "tool": "Beautiful AI",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 375",
-  "usd": "1.34",
-  "usdt": "1.34",
+  "pkr": "Rs 244",
+  "usd": "0.87",
+  "usdt": "0.87",
   "details": "Beautiful AI se professional presentations create, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1938,7 +1806,7 @@
    "AI presentations",
    "12 months"
   ],
-  "pkr_num": "375",
+  "pkr_num": "244",
   "slug": "beautiful-ai-pro-12-months"
  },
  {
@@ -1946,9 +1814,9 @@
   "tool": "Gamma AI",
   "package": "Pro",
   "duration": "Not Stated",
-  "pkr": "Rs 3,360",
-  "usd": "12.00",
-  "usdt": "12.00",
+  "pkr": "Rs 2,184",
+  "usd": "7.80",
+  "usdt": "7.80",
   "details": "Gamma AI Pro — AI se presentations and docs create.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1960,7 +1828,7 @@
    "Pro features",
    "AI presentations"
   ],
-  "pkr_num": "3360",
+  "pkr_num": "2184",
   "slug": "gamma-ai-pro"
  },
  {
@@ -1968,9 +1836,9 @@
   "tool": "Gamma AI",
   "package": "Pro — 12 Months (Premium Package)",
   "duration": "12 Months",
-  "pkr": "Rs 29,170",
-  "usd": "104.18",
-  "usdt": "104.18",
+  "pkr": "Rs 18,962",
+  "usd": "67.72",
+  "usdt": "67.72",
   "details": "Gamma Pro premium 12-month package.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -1982,7 +1850,7 @@
    "Premium package",
    "12 months"
   ],
-  "pkr_num": "29170",
+  "pkr_num": "18962",
   "slug": "gamma-ai-pro-12-months-premium-package"
  },
  {
@@ -1990,9 +1858,9 @@
   "tool": "Wispr Flow",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 10,018",
-  "usd": "35.78",
-  "usdt": "35.78",
+  "pkr": "Rs 6,513",
+  "usd": "23.26",
+  "usdt": "23.26",
   "details": "Wispr Flow Pro — voice typing AI tool, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2004,7 +1872,7 @@
    "Voice typing Pro",
    "12 months"
   ],
-  "pkr_num": "10018",
+  "pkr_num": "6513",
   "slug": "wispr-flow-pro-12-months"
  },
  {
@@ -2012,9 +1880,9 @@
   "tool": "Granola",
   "package": "Business — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 3,920",
-  "usd": "14.00",
-  "usdt": "14.00",
+  "pkr": "Rs 2,548",
+  "usd": "9.10",
+  "usdt": "9.10",
   "details": "Granola Business — meeting notes AI tool, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2027,7 +1895,7 @@
    "AI meeting notes",
    "12 months"
   ],
-  "pkr_num": "3920",
+  "pkr_num": "2548",
   "slug": "granola-business-12-months"
  },
  {
@@ -2035,9 +1903,9 @@
   "tool": "Canva",
   "package": "Edu Plan",
   "duration": "Not Stated",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Canva Edu plan admin access with — for designs best budget option.",
   "delivery": "Admin access setup (via WhatsApp)",
   "needs": "Only your email",
@@ -2050,7 +1918,7 @@
    "Admin access",
    "A very low price"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "canva-edu-plan"
  },
  {
@@ -2058,9 +1926,9 @@
   "tool": "Canva",
   "package": "Edu Pro — 1 Year",
   "duration": "1 Year",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "Canva Edu Pro a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2072,7 +1940,7 @@
    "Edu Pro features",
    "1 year"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "canva-edu-pro-1-year"
  },
  {
@@ -2080,9 +1948,9 @@
   "tool": "Canva",
   "package": "Edu Pro — Admin Panel (500 Seats)",
   "duration": "Not Stated",
-  "pkr": "Rs 3,354",
-  "usd": "11.98",
-  "usdt": "11.98",
+  "pkr": "Rs 2,181",
+  "usd": "7.79",
+  "usdt": "7.79",
   "details": "Admin panel jisme 500 seats — for schools and teams.",
   "delivery": "Admin panel access (via WhatsApp)",
   "needs": "Only your email",
@@ -2095,7 +1963,7 @@
    "Admin panel",
    "For large teams"
   ],
-  "pkr_num": "3354",
+  "pkr_num": "2181",
   "slug": "canva-edu-pro-admin-panel-500-seats"
  },
  {
@@ -2103,9 +1971,9 @@
   "tool": "Adobe Express",
   "package": "Premium — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 353",
-  "usd": "1.26",
-  "usdt": "1.26",
+  "pkr": "Rs 230",
+  "usd": "0.82",
+  "usdt": "0.82",
   "details": "Adobe Express Premium a full year — for social designs and videos.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2118,7 +1986,7 @@
    "12 months",
    "Design + video"
   ],
-  "pkr_num": "353",
+  "pkr_num": "230",
   "slug": "adobe-express-premium-12-months"
  },
  {
@@ -2126,9 +1994,9 @@
   "tool": "Adobe Express",
   "package": "Premium — 4 Months",
   "duration": "4 Months",
-  "pkr": "Rs 140",
-  "usd": "0.50",
-  "usdt": "0.50",
+  "pkr": "Rs 92",
+  "usd": "0.33",
+  "usdt": "0.33",
   "details": "Adobe Express 4-month budget package. Price is 'from' (starting price).",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2141,7 +2009,7 @@
    "4 months",
    "The cheapest Adobe option"
   ],
-  "pkr_num": "140",
+  "pkr_num": "92",
   "slug": "adobe-express-premium-4-months"
  },
  {
@@ -2149,9 +2017,9 @@
   "tool": "Adobe Creative Cloud",
   "package": "CC — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 2,212",
-  "usd": "7.90",
-  "usdt": "7.90",
+  "pkr": "Rs 1,439",
+  "usd": "5.14",
+  "usdt": "5.14",
   "details": "Adobe Creative Cloud 3 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2163,7 +2031,7 @@
    "CC apps access",
    "3 months"
   ],
-  "pkr_num": "2212",
+  "pkr_num": "1439",
   "slug": "adobe-creative-cloud-cc-3-months"
  },
  {
@@ -2171,9 +2039,9 @@
   "tool": "Adobe Creative Cloud",
   "package": "Creative — 4 Months",
   "duration": "4 Months",
-  "pkr": "Rs 16,800",
-  "usd": "60.00",
-  "usdt": "60.00",
+  "pkr": "Rs 10,920",
+  "usd": "39.00",
+  "usdt": "39.00",
   "details": "Adobe Creative package 4 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2185,7 +2053,7 @@
    "Creative apps",
    "4 months"
   ],
-  "pkr_num": "16800",
+  "pkr_num": "10920",
   "slug": "adobe-creative-cloud-creative-4-months"
  },
  {
@@ -2193,9 +2061,9 @@
   "tool": "Adobe Creative Cloud",
   "package": "Full Apps — 4 Months",
   "duration": "4 Months",
-  "pkr": "Rs 22,400",
-  "usd": "80.00",
-  "usdt": "80.00",
+  "pkr": "Rs 14,560",
+  "usd": "52.00",
+  "usdt": "52.00",
   "details": "All Adobe apps in one package, 4 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2208,7 +2076,7 @@
    "4 months",
    "Full package"
   ],
-  "pkr_num": "22400",
+  "pkr_num": "14560",
   "slug": "adobe-creative-cloud-full-apps-4-months"
  },
  {
@@ -2216,9 +2084,9 @@
   "tool": "Adobe Photoshop",
   "package": "Photoshop 2026",
   "duration": "Not Stated",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "Adobe Photoshop 2026.",
   "delivery": "Activation / key (via WhatsApp)",
   "needs": "Only your email",
@@ -2230,7 +2098,7 @@
    "Latest 2026 version",
    "Professional editing"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "adobe-photoshop-photoshop-2026"
  },
  {
@@ -2238,9 +2106,9 @@
   "tool": "Adobe Illustrator",
   "package": "Illustrator 2026",
   "duration": "Not Stated",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "Adobe Illustrator 2026 — for vector design.",
   "delivery": "Activation / key (via WhatsApp)",
   "needs": "Only your email",
@@ -2252,7 +2120,7 @@
    "Latest 2026 version",
    "Vector design"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "adobe-illustrator-illustrator-2026"
  },
  {
@@ -2260,9 +2128,9 @@
   "tool": "Framer / Website Builders",
   "package": "Lovable Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 19,600",
-  "usd": "70.00",
-  "usdt": "70.00",
+  "pkr": "Rs 12,740",
+  "usd": "45.50",
+  "usdt": "45.50",
   "details": "Lovable Pro — AI se websites and apps create, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2275,7 +2143,7 @@
    "AI website builder",
    "12 months"
   ],
-  "pkr_num": "19600",
+  "pkr_num": "12740",
   "slug": "framer-website-builders-lovable-pro-12-months"
  },
  {
@@ -2283,9 +2151,9 @@
   "tool": "Framer / Website Builders",
   "package": "Lovable Pro — 1 Month (100 Credits)",
   "duration": "1 Month",
-  "pkr": "Rs 6,720",
-  "usd": "24.00",
-  "usdt": "24.00",
+  "pkr": "Rs 4,368",
+  "usd": "15.60",
+  "usdt": "15.60",
   "details": "Lovable Pro 1 month, 100 credits included, link se easy activation.",
   "delivery": "Activation link (via WhatsApp)",
   "needs": "Only your email",
@@ -2298,7 +2166,7 @@
    "Link activation",
    "1 month"
   ],
-  "pkr_num": "6720",
+  "pkr_num": "4368",
   "slug": "framer-website-builders-lovable-pro-1-month-100-credits"
  },
  {
@@ -2306,9 +2174,9 @@
   "tool": "Framer / Website Builders",
   "package": "Lovable Lite — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 2,240",
-  "usd": "8.00",
-  "usdt": "8.00",
+  "pkr": "Rs 1,456",
+  "usd": "5.20",
+  "usdt": "5.20",
   "details": "Lovable Lite plan a full year.",
   "delivery": "Account / activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2320,7 +2188,7 @@
    "Lite plan",
    "12 months"
   ],
-  "pkr_num": "2240",
+  "pkr_num": "1456",
   "slug": "framer-website-builders-lovable-lite-12-months"
  },
  {
@@ -2328,9 +2196,9 @@
   "tool": "Framer / Website Builders",
   "package": "Lovable Pro Lite — 12 Months (300 Credits)",
   "duration": "12 Months",
-  "pkr": "Rs 3,354",
-  "usd": "11.98",
-  "usdt": "11.98",
+  "pkr": "Rs 2,181",
+  "usd": "7.79",
+  "usdt": "7.79",
   "details": "Pro Lite plan 300 credits included, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2343,7 +2211,7 @@
    "12 months",
    "Pro Lite features"
   ],
-  "pkr_num": "3354",
+  "pkr_num": "2181",
   "slug": "framer-website-builders-lovable-pro-lite-12-months-300-credits"
  },
  {
@@ -2351,9 +2219,9 @@
   "tool": "Framer / Website Builders",
   "package": "Bolt.new Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 10,130",
-  "usd": "36.18",
-  "usdt": "36.18",
+  "pkr": "Rs 6,586",
+  "usd": "23.52",
+  "usdt": "23.52",
   "details": "Bolt.new Pro — AI coding and app building, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2366,7 +2234,7 @@
    "12 months",
    "AI app building"
   ],
-  "pkr_num": "10130",
+  "pkr_num": "6586",
   "slug": "framer-website-builders-bolt-new-pro-12-months"
  },
  {
@@ -2374,9 +2242,9 @@
   "tool": "Mobbin",
   "package": "Mobbin — 10 Seats, 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 4,754",
-  "usd": "16.98",
-  "usdt": "16.98",
+  "pkr": "Rs 3,091",
+  "usd": "11.04",
+  "usdt": "11.04",
   "details": "Mobbin design library, 10 seats for a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2389,7 +2257,7 @@
    "Design library",
    "12 months"
   ],
-  "pkr_num": "4754",
+  "pkr_num": "3091",
   "slug": "mobbin-mobbin-10-seats-12-months"
  },
  {
@@ -2397,9 +2265,9 @@
   "tool": "Cursor",
   "package": "Cursor Pro + Grok — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 8,400",
-  "usd": "30.00",
-  "usdt": "30.00",
+  "pkr": "Rs 5,460",
+  "usd": "19.50",
+  "usdt": "19.50",
   "details": "Cursor Pro and Grok together in one package.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2412,7 +2280,7 @@
    "1 month",
    "For developers"
   ],
-  "pkr_num": "8400",
+  "pkr_num": "5460",
   "slug": "cursor-cursor-pro-grok-1-month"
  },
  {
@@ -2420,9 +2288,9 @@
   "tool": "Replit",
   "package": "Core — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 19,600",
-  "usd": "70.00",
-  "usdt": "70.00",
+  "pkr": "Rs 12,740",
+  "usd": "45.50",
+  "usdt": "45.50",
   "details": "Replit Core plan a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2434,7 +2302,7 @@
    "Core features",
    "12 months"
   ],
-  "pkr_num": "19600",
+  "pkr_num": "12740",
   "slug": "replit-core-12-months"
  },
  {
@@ -2442,9 +2310,9 @@
   "tool": "n8n",
   "package": "Starter — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 8,400",
-  "usd": "30.00",
-  "usdt": "30.00",
+  "pkr": "Rs 5,460",
+  "usd": "19.50",
+  "usdt": "19.50",
   "details": "N8n Starter — for automation workflows, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2457,7 +2325,7 @@
    "Automation",
    "12 months"
   ],
-  "pkr_num": "8400",
+  "pkr_num": "5460",
   "slug": "n8n-starter-12-months"
  },
  {
@@ -2465,9 +2333,9 @@
   "tool": "Warp",
   "package": "Build — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 5,600",
-  "usd": "20.00",
-  "usdt": "20.00",
+  "pkr": "Rs 3,640",
+  "usd": "13.00",
+  "usdt": "13.00",
   "details": "Warp Build plan a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2479,7 +2347,7 @@
    "Build plan",
    "12 months"
   ],
-  "pkr_num": "5600",
+  "pkr_num": "3640",
   "slug": "warp-build-12-months"
  },
  {
@@ -2487,9 +2355,9 @@
   "tool": "Supabase",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 42,000",
-  "usd": "150.00",
-  "usdt": "150.00",
+  "pkr": "Rs 27,300",
+  "usd": "97.50",
+  "usdt": "97.50",
   "details": "Supabase Pro backend plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2501,7 +2369,7 @@
    "Pro backend",
    "12 months"
   ],
-  "pkr_num": "42000",
+  "pkr_num": "27300",
   "slug": "supabase-pro-12-months"
  },
  {
@@ -2509,9 +2377,9 @@
   "tool": "Resend",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 14,000",
-  "usd": "50.00",
-  "usdt": "50.00",
+  "pkr": "Rs 9,100",
+  "usd": "32.50",
+  "usdt": "32.50",
   "details": "Resend Pro email API plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2523,7 +2391,7 @@
    "Pro email API",
    "12 months"
   ],
-  "pkr_num": "14000",
+  "pkr_num": "9100",
   "slug": "resend-pro-12-months"
  },
  {
@@ -2531,9 +2399,9 @@
   "tool": "PostHog",
   "package": "Scale — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 5,600",
-  "usd": "20.00",
-  "usdt": "20.00",
+  "pkr": "Rs 3,640",
+  "usd": "13.00",
+  "usdt": "13.00",
   "details": "PostHog Scale analytics plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2546,7 +2414,7 @@
    "Product analytics",
    "12 months"
   ],
-  "pkr_num": "5600",
+  "pkr_num": "3640",
   "slug": "posthog-scale-12-months"
  },
  {
@@ -2554,9 +2422,9 @@
   "tool": "Pangram",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 4,480",
-  "usd": "16.00",
-  "usdt": "16.00",
+  "pkr": "Rs 2,912",
+  "usd": "10.40",
+  "usdt": "10.40",
   "details": "Pangram Pro — AI text detection tool, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2568,7 +2436,7 @@
    "Pro detection",
    "12 months"
   ],
-  "pkr_num": "4480",
+  "pkr_num": "2912",
   "slug": "pangram-pro-12-months"
  },
  {
@@ -2576,9 +2444,9 @@
   "tool": "Customer.io",
   "package": "Essentials — 1 Year",
   "duration": "1 Year",
-  "pkr": "Rs 3,920",
-  "usd": "14.00",
-  "usdt": "14.00",
+  "pkr": "Rs 2,548",
+  "usd": "9.10",
+  "usdt": "9.10",
   "details": "Customer.io Essentials messaging plan, one year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2590,7 +2458,7 @@
    "Essentials plan",
    "1 year"
   ],
-  "pkr_num": "3920",
+  "pkr_num": "2548",
   "slug": "customer-io-essentials-1-year"
  },
  {
@@ -2598,9 +2466,9 @@
   "tool": "Factory AI",
   "package": "Pro — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 30,800",
-  "usd": "110.00",
-  "usdt": "110.00",
+  "pkr": "Rs 20,020",
+  "usd": "71.50",
+  "usdt": "71.50",
   "details": "Factory Pro AI coding plan, a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2612,39 +2480,17 @@
    "Pro plan",
    "12 months"
   ],
-  "pkr_num": "30800",
+  "pkr_num": "20020",
   "slug": "factory-ai-pro-12-months"
- },
- {
-  "category": "Developer Tools",
-  "tool": "Factory AI",
-  "package": "Pro — 12 Months (Premium Package)",
-  "duration": "12 Months",
-  "pkr": "Rs 43,730",
-  "usd": "156.18",
-  "usdt": "156.18",
-  "details": "Factory Pro premium package.",
-  "delivery": "Activation (via WhatsApp)",
-  "needs": "Only your email",
-  "availability": "Limited",
-  "best": false,
-  "keywords": "Factory AI price in Pakistan, buy Factory AI Pakistan, Factory AI subscription Pakistan",
-  "logo": "factory-ai.svg",
-  "features": [
-   "Premium package",
-   "12 months"
-  ],
-  "pkr_num": "43730",
-  "slug": "factory-ai-pro-12-months-premium-package"
  },
  {
   "category": "Developer Tools",
   "tool": "Render",
   "package": "$50 Credits Coupon",
   "duration": "Credits Coupon",
-  "pkr": "Rs 12,074",
-  "usd": "43.12",
-  "usdt": "43.12",
+  "pkr": "Rs 7,848",
+  "usd": "28.03",
+  "usdt": "28.03",
   "details": "$50 Render hosting credits coupon.",
   "delivery": "Coupon code (via WhatsApp)",
   "needs": "Only your email",
@@ -2656,7 +2502,7 @@
    "$50 hosting credits",
    "Coupon delivery"
   ],
-  "pkr_num": "12074",
+  "pkr_num": "7848",
   "slug": "render-50-credits-coupon"
  },
  {
@@ -2664,9 +2510,9 @@
   "tool": "Autodesk",
   "package": "Admin Panel — 3000 Users, 3 Years",
   "duration": "3 Years",
-  "pkr": "Rs 5,034",
-  "usd": "17.98",
-  "usdt": "17.98",
+  "pkr": "Rs 3,273",
+  "usd": "11.69",
+  "usdt": "11.69",
   "details": "Autodesk admin panel, 3000 users and 3 years validity.",
   "delivery": "Admin panel access (via WhatsApp)",
   "needs": "Only your email",
@@ -2679,7 +2525,7 @@
    "3 years",
    "Admin panel"
   ],
-  "pkr_num": "5034",
+  "pkr_num": "3273",
   "slug": "autodesk-admin-panel-3000-users-3-years"
  },
  {
@@ -2687,9 +2533,9 @@
   "tool": "OpenAI API",
   "package": "GPT API — 50M Tokens (Codex)",
   "duration": "2 Days",
-  "pkr": "Rs 1,624",
-  "usd": "5.80",
-  "usdt": "5.80",
+  "pkr": "Rs 1,056",
+  "usd": "3.77",
+  "usdt": "3.77",
   "details": "GPT API 50 million tokens, for Codex use.",
   "delivery": "API details (via WhatsApp)",
   "needs": "Only your email",
@@ -2701,7 +2547,7 @@
    "50M tokens",
    "API access"
   ],
-  "pkr_num": "1624",
+  "pkr_num": "1056",
   "slug": "openai-api-gpt-api-50m-tokens-codex"
  },
  {
@@ -2709,9 +2555,9 @@
   "tool": "Coursera",
   "package": "Premium — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 532",
-  "usd": "1.90",
-  "usdt": "1.90",
+  "pkr": "Rs 344",
+  "usd": "1.23",
+  "usdt": "1.23",
   "details": "Coursera Premium a full year — thousands of courses. Price is 'from' (starting price).",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2724,7 +2570,7 @@
    "12 months",
    "Certificates"
   ],
-  "pkr_num": "532",
+  "pkr_num": "344",
   "slug": "coursera-premium-12-months"
  },
  {
@@ -2732,9 +2578,9 @@
   "tool": "Duolingo",
   "package": "Super — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 168",
-  "usd": "0.60",
-  "usdt": "0.60",
+  "pkr": "Rs 109",
+  "usd": "0.39",
+  "usdt": "0.39",
   "details": "Duolingo Super a full year, through a redeem link.",
   "delivery": "Redeem link (via WhatsApp)",
   "needs": "Only your email",
@@ -2747,7 +2593,7 @@
    "12 months",
    "Ads-free learning"
   ],
-  "pkr_num": "168",
+  "pkr_num": "109",
   "slug": "duolingo-super-12-months"
  },
  {
@@ -2755,9 +2601,9 @@
   "tool": "Duolingo",
   "package": "Super — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 280",
-  "usd": "1.00",
-  "usdt": "1.00",
+  "pkr": "Rs 182",
+  "usd": "0.65",
+  "usdt": "0.65",
   "details": "Duolingo Super for just one month.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2769,7 +2615,7 @@
    "Super features",
    "1 month"
   ],
-  "pkr_num": "280",
+  "pkr_num": "182",
   "slug": "duolingo-super-1-month"
  },
  {
@@ -2777,9 +2623,9 @@
   "tool": "EdX",
   "package": "Premium — 12 Months",
   "duration": "12 Months",
-  "pkr": "Rs 1,736",
-  "usd": "6.20",
-  "usdt": "6.20",
+  "pkr": "Rs 1,128",
+  "usd": "4.03",
+  "usdt": "4.03",
   "details": "EdX Premium a full year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2791,7 +2637,7 @@
    "Premium courses",
    "12 months"
   ],
-  "pkr_num": "1736",
+  "pkr_num": "1128",
   "slug": "edx-premium-12-months"
  },
  {
@@ -2799,9 +2645,9 @@
   "tool": "Readwise",
   "package": "Readwise — 1 Year",
   "duration": "1 Year",
-  "pkr": "Rs 5,600",
-  "usd": "20.00",
-  "usdt": "20.00",
+  "pkr": "Rs 3,640",
+  "usd": "13.00",
+  "usdt": "13.00",
   "details": "Readwise reading app, one year.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2813,7 +2659,7 @@
    "Full features",
    "1 year"
   ],
-  "pkr_num": "5600",
+  "pkr_num": "3640",
   "slug": "readwise-readwise-1-year"
  },
  {
@@ -2821,9 +2667,9 @@
   "tool": "NordVPN",
   "package": "Basic — 3 Months (Link)",
   "duration": "3 Months",
-  "pkr": "Rs 1,008",
-  "usd": "3.60",
-  "usdt": "3.60",
+  "pkr": "Rs 655",
+  "usd": "2.34",
+  "usdt": "2.34",
   "details": "NordVPN 3 months, through the link delivery.",
   "delivery": "Premium link (via WhatsApp)",
   "needs": "Only your email",
@@ -2836,7 +2682,7 @@
    "3 months",
    "Multiple devices"
   ],
-  "pkr_num": "1008",
+  "pkr_num": "655",
   "slug": "nordvpn-basic-3-months-link"
  },
  {
@@ -2844,9 +2690,9 @@
   "tool": "NordVPN",
   "package": "Basic — 3 Months (Shared)",
   "duration": "3 Months",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "Shared NordVPN plan, the cheapest VPN option.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Only your email",
@@ -2859,7 +2705,7 @@
    "3 months",
    "Budget option"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "nordvpn-basic-3-months-shared"
  },
  {
@@ -2867,9 +2713,9 @@
   "tool": "NordVPN",
   "package": "Premium — 3 Months (Link)",
   "duration": "3 Months",
-  "pkr": "Rs 1,456",
-  "usd": "5.20",
-  "usdt": "5.20",
+  "pkr": "Rs 946",
+  "usd": "3.38",
+  "usdt": "3.38",
   "details": "NordVPN Premium plan 3 months, link delivery.",
   "delivery": "Premium link (via WhatsApp)",
   "needs": "Only your email",
@@ -2881,7 +2727,7 @@
    "Premium features",
    "3 months"
   ],
-  "pkr_num": "1456",
+  "pkr_num": "946",
   "slug": "nordvpn-premium-3-months-link"
  },
  {
@@ -2889,9 +2735,9 @@
   "tool": "ExpressVPN",
   "package": "VPN — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 1,400",
-  "usd": "5.00",
-  "usdt": "5.00",
+  "pkr": "Rs 910",
+  "usd": "3.25",
+  "usdt": "3.25",
   "details": "ExpressVPN 3 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2903,7 +2749,7 @@
    "Fast VPN",
    "3 months"
   ],
-  "pkr_num": "1400",
+  "pkr_num": "910",
   "slug": "expressvpn-vpn-3-months"
  },
  {
@@ -2911,9 +2757,9 @@
   "tool": "ExpressVPN",
   "package": "Key — 3 Days",
   "duration": "3 Days",
-  "pkr": "Rs 280",
-  "usd": "1.00",
-  "usdt": "1.00",
+  "pkr": "Rs 182",
+  "usd": "0.65",
+  "usdt": "0.65",
   "details": "ExpressVPN 3-day key — for short use or a trial.",
   "delivery": "VPN key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -2925,7 +2771,7 @@
    "3 days key",
    "To try"
   ],
-  "pkr_num": "280",
+  "pkr_num": "182",
   "slug": "expressvpn-key-3-days"
  },
  {
@@ -2933,9 +2779,9 @@
   "tool": "HMA VPN",
   "package": "Key — 30 Days (Android / PC)",
   "duration": "30 Days",
-  "pkr": "Rs 84",
-  "usd": "0.30",
-  "usdt": "0.30",
+  "pkr": "Rs 56",
+  "usd": "0.20",
+  "usdt": "0.20",
   "details": "HMA VPN key, Android and PC for both, 30 days.",
   "delivery": "VPN key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -2948,7 +2794,7 @@
    "30 days",
    "The cheapest VPN key"
   ],
-  "pkr_num": "84",
+  "pkr_num": "56",
   "slug": "hma-vpn-key-30-days-android-pc"
  },
  {
@@ -2956,9 +2802,9 @@
   "tool": "Seed4Me VPN",
   "package": "VPN — 6 Months",
   "duration": "6 Months",
-  "pkr": "Rs 840",
-  "usd": "3.00",
-  "usdt": "3.00",
+  "pkr": "Rs 546",
+  "usd": "1.95",
+  "usdt": "1.95",
   "details": "Seed4Me VPN a full 6 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2970,7 +2816,7 @@
    "6 months",
    "VPN features"
   ],
-  "pkr_num": "840",
+  "pkr_num": "546",
   "slug": "seed4me-vpn-vpn-6-months"
  },
  {
@@ -2978,9 +2824,9 @@
   "tool": "Avira VPN",
   "package": "VPN — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 224",
-  "usd": "0.80",
-  "usdt": "0.80",
+  "pkr": "Rs 146",
+  "usd": "0.52",
+  "usdt": "0.52",
   "details": "Avira VPN 3 months.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your email",
@@ -2992,7 +2838,7 @@
    "3 months",
    "Budget VPN"
   ],
-  "pkr_num": "224",
+  "pkr_num": "146",
   "slug": "avira-vpn-vpn-3-months"
  },
  {
@@ -3000,9 +2846,9 @@
   "tool": "ESET",
   "package": "Internet Security",
   "duration": "Not Stated",
-  "pkr": "Rs 196",
-  "usd": "0.70",
-  "usdt": "0.70",
+  "pkr": "Rs 126",
+  "usd": "0.45",
+  "usdt": "0.45",
   "details": "ESET Internet Security — for PC protection.",
   "delivery": "Key / activation (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3014,7 +2860,7 @@
    "Internet security",
    "PC protection"
   ],
-  "pkr_num": "196",
+  "pkr_num": "126",
   "slug": "eset-internet-security"
  },
  {
@@ -3022,9 +2868,9 @@
   "tool": "ESET",
   "package": "Smart Security Premium",
   "duration": "Not Stated",
-  "pkr": "Rs 168",
-  "usd": "0.60",
-  "usdt": "0.60",
+  "pkr": "Rs 109",
+  "usd": "0.39",
+  "usdt": "0.39",
   "details": "ESET Smart Security Premium.",
   "delivery": "Key / activation (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3036,7 +2882,7 @@
    "Premium security",
    "PC protection"
   ],
-  "pkr_num": "168",
+  "pkr_num": "109",
   "slug": "eset-smart-security-premium"
  },
  {
@@ -3044,9 +2890,9 @@
   "tool": "LinkedIn",
   "package": "Career Premium — 3 Months",
   "duration": "3 Months",
-  "pkr": "Rs 672",
-  "usd": "2.40",
-  "usdt": "2.40",
+  "pkr": "Rs 437",
+  "usd": "1.56",
+  "usdt": "1.56",
   "details": "LinkedIn Career Premium 3 months — for job hunting and InMail.",
   "delivery": "Activation (via WhatsApp)",
   "needs": "Only your LinkedIn email",
@@ -3059,7 +2905,7 @@
    "InMail credits",
    "Job search features"
   ],
-  "pkr_num": "672",
+  "pkr_num": "437",
   "slug": "linkedin-career-premium-3-months"
  },
  {
@@ -3067,9 +2913,9 @@
   "tool": "Gmail",
   "package": "Fresh Gmail Account",
   "duration": "Per Account",
-  "pkr": "Rs 252",
-  "usd": "0.90",
-  "usdt": "0.90",
+  "pkr": "Rs 165",
+  "usd": "0.59",
+  "usdt": "0.59",
   "details": "Fresh normal Gmail account — with email and password, 100% private access.",
   "delivery": "Account login details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -3082,7 +2928,7 @@
    "Private access",
    "Lower price on quantity"
   ],
-  "pkr_num": "252",
+  "pkr_num": "165",
   "slug": "gmail-fresh-gmail-account"
  },
  {
@@ -3090,9 +2936,9 @@
   "tool": "Outlook",
   "package": "Outlook Mail Account",
   "duration": "Per Account",
-  "pkr": "Rs 56",
-  "usd": "0.20",
-  "usdt": "0.20",
+  "pkr": "Rs 36",
+  "usd": "0.13",
+  "usdt": "0.13",
   "details": "Outlook mail account, ready to use.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -3104,7 +2950,7 @@
    "Ready account",
    "Low price"
   ],
-  "pkr_num": "56",
+  "pkr_num": "36",
   "slug": "outlook-outlook-mail-account"
  },
  {
@@ -3112,9 +2958,9 @@
   "tool": "Telegram",
   "package": "Account — US Number",
   "duration": "Per Account",
-  "pkr": "Rs 554",
-  "usd": "1.98",
-  "usdt": "1.98",
+  "pkr": "Rs 361",
+  "usd": "1.29",
+  "usdt": "1.29",
   "details": "US number Telegram account.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -3126,7 +2972,7 @@
    "US number",
    "Ready account"
   ],
-  "pkr_num": "554",
+  "pkr_num": "361",
   "slug": "telegram-account-us-number"
  },
  {
@@ -3134,9 +2980,9 @@
   "tool": "Telegram",
   "package": "Account — Portugal Number",
   "duration": "Per Account",
-  "pkr": "Rs 392",
-  "usd": "1.40",
-  "usdt": "1.40",
+  "pkr": "Rs 255",
+  "usd": "0.91",
+  "usdt": "0.91",
   "details": "Portugal number Telegram account.",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -3148,7 +2994,7 @@
    "Portugal number",
    "Ready account"
   ],
-  "pkr_num": "392",
+  "pkr_num": "255",
   "slug": "telegram-account-portugal-number"
  },
  {
@@ -3156,9 +3002,9 @@
   "tool": "TikTok",
   "package": "New Account (With Avatar + Video)",
   "duration": "Per Account",
-  "pkr": "Rs 62",
-  "usd": "0.22",
-  "usdt": "0.22",
+  "pkr": "Rs 39",
+  "usd": "0.14",
+  "usdt": "0.14",
   "details": "Naor TikTok account, avatar and video with. Price is 'from' (starting price).",
   "delivery": "Account details (via WhatsApp)",
   "needs": "Nothing needed — you get a ready account",
@@ -3171,7 +3017,7 @@
    "Avatar + video set",
    "Starting price"
   ],
-  "pkr_num": "62",
+  "pkr_num": "39",
   "slug": "tiktok-new-account-with-avatar-video"
  },
  {
@@ -3179,9 +3025,9 @@
   "tool": "WhatsApp",
   "package": "Portugal Number — OTP Service",
   "duration": "Per OTP",
-  "pkr": "Rs 560",
-  "usd": "2.00",
-  "usdt": "2.00",
+  "pkr": "Rs 364",
+  "usd": "1.30",
+  "usdt": "1.30",
   "details": "WhatsApp OTP service on a Portugal number.",
   "delivery": "OTP code (via WhatsApp)",
   "needs": "Only your number",
@@ -3193,7 +3039,7 @@
    "Portugal number",
    "Ek OTP"
   ],
-  "pkr_num": "560",
+  "pkr_num": "364",
   "slug": "whatsapp-portugal-number-otp-service"
  },
  {
@@ -3201,9 +3047,9 @@
   "tool": "Antigravity",
   "package": "QR Verify Service",
   "duration": "Per Verify",
-  "pkr": "Rs 224",
-  "usd": "0.80",
-  "usdt": "0.80",
+  "pkr": "Rs 146",
+  "usd": "0.52",
+  "usdt": "0.52",
   "details": "Antigravity QR verification service.",
   "delivery": "QR process (via WhatsApp)",
   "needs": "Only your email",
@@ -3215,7 +3061,7 @@
    "QR verify",
    "Instant service"
   ],
-  "pkr_num": "224",
+  "pkr_num": "146",
   "slug": "antigravity-qr-verify-service"
  },
  {
@@ -3223,9 +3069,9 @@
   "tool": "Discord",
   "package": "Boost — 1 Month",
   "duration": "1 Month",
-  "pkr": "Rs 95",
-  "usd": "0.34",
-  "usdt": "0.34",
+  "pkr": "Rs 62",
+  "usd": "0.22",
+  "usdt": "0.22",
   "details": "Discord server boost, 1 month.",
   "delivery": "Boost apply (via WhatsApp)",
   "needs": "Only your Discord / server",
@@ -3237,7 +3083,7 @@
    "Server boost",
    "1 month"
   ],
-  "pkr_num": "95",
+  "pkr_num": "62",
   "slug": "discord-boost-1-month"
  },
  {
@@ -3245,9 +3091,9 @@
   "tool": "Advanced SystemCare",
   "package": "SystemCare 19 — Key",
   "duration": "Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Advanced SystemCare 19 key — for PC speed and cleanup.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3259,7 +3105,7 @@
    "PC cleanup",
    "Speed boost"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "advanced-systemcare-systemcare-19-key"
  },
  {
@@ -3267,9 +3113,9 @@
   "tool": "Driver Booster",
   "package": "PRO 14 — Key",
   "duration": "Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Driver Booster PRO 14 — outdated drivers auto update.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3281,7 +3127,7 @@
    "Driver updates",
    "PRO version"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "driver-booster-pro-14-key"
  },
  {
@@ -3289,9 +3135,9 @@
   "tool": "Software Updater",
   "package": "Updater 9 PRO — Key",
   "duration": "Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "Software Updater 9 PRO key.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3303,7 +3149,7 @@
    "Auto software updates",
    "PRO version"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "software-updater-updater-9-pro-key"
  },
  {
@@ -3311,9 +3157,9 @@
   "tool": "iObit Uninstaller",
   "package": "Uninstaller Pro — Key",
   "duration": "Key",
-  "pkr": "Rs 274",
-  "usd": "0.98",
-  "usdt": "0.98",
+  "pkr": "Rs 179",
+  "usd": "0.64",
+  "usdt": "0.64",
   "details": "IObit Uninstaller Pro — programs saaf tareeqe remove.",
   "delivery": "Product key (via WhatsApp)",
   "needs": "Nothing needed — you get a product key",
@@ -3325,7 +3171,7 @@
    "Clean uninstall",
    "PRO version"
   ],
-  "pkr_num": "274",
+  "pkr_num": "179",
   "slug": "iobit-uninstaller-uninstaller-pro-key"
  },
  {
@@ -3333,9 +3179,9 @@
   "tool": "BatmanStore Bundle",
   "package": "All-in-One Bundle — 21 Tools",
   "duration": "Mostly 12 Months",
-  "pkr": "Rs 39,200",
-  "usd": "140.00",
-  "usdt": "140.00",
+  "pkr": "Rs 25,480",
+  "usd": "91.00",
+  "usdt": "91.00",
   "details": "21 premium tools in one bundle — Notion Business, Manus, Factory Pro, Framer Pro, Warp Build, Granola and many more. Most plans are 12 months.",
   "delivery": "Bundle details (via WhatsApp)",
   "needs": "Only your email",
@@ -3348,7 +3194,7 @@
    "Zordatar 12-month plans",
    "Best value for teams"
   ],
-  "pkr_num": "39200",
+  "pkr_num": "25480",
   "slug": "batmanstore-bundle-all-in-one-bundle-21-tools"
  }
 ]
