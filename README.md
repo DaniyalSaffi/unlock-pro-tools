@@ -20,6 +20,13 @@ When a customer taps **Order on WhatsApp** on any package, they are taken to Wha
 **+92 321 4378770** with a ready-written message containing the product, package, duration and
 the price in the currency they selected.
 
+## Follow us
+- WhatsApp Channel (live): https://whatsapp.com/channel/0029VbCinLy7YSd59nLvZe2k — shown in a
+  "Never Miss a Price Drop" strip on the home page and every product page, in the FAQ, and in
+  the footer.
+- Facebook, Instagram, TikTok, Medium: placeholders in the footer for now. To activate one,
+  put its link in `SOCIAL_LINKS` in `build_site.py` and rebuild.
+
 ## Payment / Delivery / Support
 - Payment: Easypaisa, JazzCash, SadaPay, PayPal
 - Delivery: 24/7 Available

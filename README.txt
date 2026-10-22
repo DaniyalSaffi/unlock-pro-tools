@@ -18,6 +18,13 @@ WHAT IS INSIDE
 - products-data.json — all product data in one file
 - sitemap.xml + robots.txt — for Google
 
+SOCIAL LINKS
+WhatsApp Channel (live): https://whatsapp.com/channel/0029VbCinLy7YSd59nLvZe2k
+It appears in the "Never Miss a Price Drop" strip (home + every product page), in the FAQ
+and in the footer "Follow Us" row. Facebook, Instagram, TikTok and Medium sit in the
+footer as placeholders — to activate one, add its link in SOCIAL_LINKS in build_site.py
+and rebuild.
+
 PRICING (updated 22 Oct 2026 on Daniyal's order)
 New Price = (Old Price / 2) x 1.30 — every price is now 65% of the earlier price.
 PKR is calculated at 1 USD = Rs 280. Near-duplicate packages were merged
