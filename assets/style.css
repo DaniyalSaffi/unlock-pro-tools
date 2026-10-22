@@ -79,3 +79,6 @@ table.plans th{background:var(--navy);color:#fff}
 .rel a{background:#fff;border:1.5px solid #DCE5EA;border-radius:12px;padding:13px;font-size:14px;font-weight:bold;color:var(--navy)}
 .back{display:inline-block;margin-top:18px;color:var(--teal);font-weight:bold}
 .noresult{display:none;text-align:center;padding:30px;color:var(--muted)}
+.searchinfo{display:none;align-items:center;gap:10px;flex-wrap:wrap;background:#FFF7DE;border:1.5px dashed var(--gold);border-radius:12px;padding:12px 16px;margin:14px 0 4px;font-size:15px;color:var(--navy)}
+.searchinfo button{margin-left:auto;background:var(--navy);color:#fff;border:none;padding:8px 14px;border-radius:18px;font-size:13.5px;font-weight:bold;cursor:pointer}
+body.searching .hero,body.searching .cats{display:none}
