@@ -1,31 +1,31 @@
 # Unlock Pro Tools
 
-Premium tools aur subscriptions ki online dukaan — 148 packages, 13 categories.
-Prices PKR, USD aur USDT me, order ek click me WhatsApp Business par.
+An online store for premium tools and subscriptions — 148 packages in 13 categories.
+Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
 
 **Live demo:** https://daniyalsaffi.github.io/unlock-pro-tools/
-(Demo stage: ye site abhi Google search se chhupi hui hai — noindex. Asal domain lagne par SEO khul jayega.)
+(Demo stage: the site is hidden from Google search for now — noindex. SEO opens when the real domain is connected.)
 
-## Kya hai is repo me
-- `index.html` — home page (saaray products, categories, search, currency selector, FAQ)
-- `products/` — har product ki apni SEO detail page (148 pages)
-- `assets/` — design (style.css) aur code (app.js)
-- `images/products/` — har tool ka logo (46 asal brand logos + baqi ke monogram)
-- `products-data.json` — saaray products ka data ek file me
-- `sitemap.xml`, `robots.txt` — Google ke liye
+## What is in this repo
+- `index.html` — home page (all products, categories, search, currency selector, FAQ)
+- `products/` — a separate SEO detail page for every product (148 pages)
+- `assets/` — design (style.css) and code (app.js)
+- `images/products/` — a logo for every tool (46 real brand logos + monograms for the rest)
+- `products-data.json` — all product data in one file
+- `sitemap.xml`, `robots.txt` — for Google
 
-## Order flow
-Customer kisi package par **Order on WhatsApp** dabata hai to wo seedha WhatsApp Business
-**+92 321 4378770** par jata hai — product, package, duration aur usi currency wali price
-ke sath pehle se likha message tayyar milta hai.
+## How ordering works
+When a customer taps **Order on WhatsApp** on any package, they are taken to WhatsApp Business
+**+92 321 4378770** with a ready-written message containing the product, package, duration and
+the price in the currency they selected.
 
 ## Payment / Delivery / Support
 - Payment: Easypaisa, JazzCash, SadaPay, PayPal
 - Delivery: 24/7 Available
 - Support: 24/7 Online
 
-## Rang (confirmed)
-Navy `#0A2540` + Teal `#0E7C7B` + Gold `#C9A227`, Order button WhatsApp green `#25D366`
+## Colours (confirmed)
+Navy `#0A2540` + Teal `#0E7C7B` + Gold `#C9A227`, order buttons in WhatsApp green `#25D366`
 
-Ye site saada HTML/CSS/JS hai — aage chal kar Hostinger ya GoHighLevel par bhee
-waisa ka waisa move ho sakti hai, dobara banana nahi parega.
+The site is plain HTML/CSS/JS — it can move to Hostinger or GoHighLevel later as-is,
+with no rebuild needed.
