@@ -8,7 +8,8 @@ Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
 
 ## What is in this repo
 - `index.html` — home page (all products, categories, search, currency selector, FAQ)
-- `products/` — a separate SEO detail page for every product (141 pages)
+- `products/` — a separate SEO detail page for every product (141 pages). Every page shows the
+  other packages of the same tool first ("More [tool] packages"), then more from its category.
 - `assets/` — design (style.css) and code (app.js)
 - `images/products/` — a logo for every tool (74 of 76 tools carry real brand logos)
 - `products-data.json` — all product data in one file

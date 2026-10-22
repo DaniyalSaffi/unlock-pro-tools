@@ -6,7 +6,9 @@ Just upload this complete folder as-is.
 
 WHAT IS INSIDE
 - index.html — home page (141 products, 13 categories, payment/delivery/support section, FAQ)
-- products/ — a separate SEO page for every product (141 pages)
+- products/ — a separate SEO page for every product (141 pages). Every product page first
+  shows the other packages of the SAME tool ("More [tool] packages" — for example all other
+  CapCut durations and plans), then "More packages in this category".
 - assets/style.css, assets/app.js — design, plus the currency/search code
 - images/products/ — logos for 76 tools. 74 carry real brand logos (Simple Icons library,
   official site icons and Wikimedia). Only two keep designed monogram logos: the BatmanStore
