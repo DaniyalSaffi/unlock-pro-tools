@@ -10,7 +10,7 @@ Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
 - `index.html` — home page (all products, categories, search, currency selector, FAQ)
 - `products/` — a separate SEO detail page for every product (148 pages)
 - `assets/` — design (style.css) and code (app.js)
-- `images/products/` — a logo for every tool (46 real brand logos + monograms for the rest)
+- `images/products/` — a logo for every tool (74 of 76 tools carry real brand logos)
 - `products-data.json` — all product data in one file
 - `sitemap.xml`, `robots.txt` — for Google
 

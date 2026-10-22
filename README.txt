@@ -8,9 +8,11 @@ WHAT IS INSIDE
 - index.html — home page (148 products, 13 categories, payment/delivery/support section, FAQ)
 - products/ — a separate SEO page for every product (148 pages)
 - assets/style.css, assets/app.js — design, plus the currency/search code
-- images/products/ — logos for 76 tools. 46 carry real brand logos (from the Simple Icons
-  library, in brand colours). The other 30 smaller/newer tools use monogram logos for now —
-  when a real logo file arrives, replace the file with the same name and the site picks it up.
+- images/products/ — logos for 76 tools. 74 carry real brand logos (Simple Icons library,
+  official site icons and Wikimedia). Only two keep designed monogram logos: the BatmanStore
+  bundle (a bundle of many tools, no single brand) and Muse AI (a token service with no
+  clear official logo). When a real logo file arrives for them, drop it into logos-real/
+  with the same name and rebuild — the site picks it up itself.
 - products-data.json — all product data in one file
 - sitemap.xml + robots.txt — for Google
 
