@@ -12,13 +12,28 @@ Prices in PKR, USD and USDT. Order in one click on WhatsApp Business.
   other packages of the same tool first ("More [tool] packages"), then more from its category.
 - `assets/` — design (style.css) and code (app.js)
 - `images/products/` — a logo for every tool (74 of 76 tools carry real brand logos)
-- `products-data.json` — all product data in one file
+- `products-data.json` — all product data in one file, including each package's base cost
 - `sitemap.xml`, `robots.txt` — for Google
 
 ## How ordering works
 When a customer taps **Order on WhatsApp** on any package, they are taken to WhatsApp Business
 **+92 321 4378770** with a ready-written message containing the product, package, duration and
-the price in the currency they selected.
+the price in the currency they selected — calculated at that moment, so the message always
+matches the price on screen.
+
+## How prices work (live rates, added 23 Oct 2026)
+- The stored base value of every package is its original **cost in PKR** (`costPkr` in
+  products-data.json). The final PKR price = cost × 1.25 (the 25% profit), calculated in the
+  visitor's browser.
+- USD and USDT prices are calculated from the final PKR price using **two separate live
+  rates**: USD = PKR ÷ USD rate, USDT = PKR ÷ USDT rate.
+- The rates come from the Google Sheet **"Unlock Pro Tools — Live Rates"**
+  (bank USD rate from Google Finance; USDT crypto rate refreshed hourly), served to the site
+  by a small Apps Script bridge. The site's toolbar shows "Today's rates" once they load.
+- The sheet has two **margin cells** (USD and USDT). Final rate = market rate + margin.
+  Margins are currently 0 and can be changed in the sheet at any time — no site rebuild needed.
+- If the rates feed is ever unreachable, the site falls back to built-in backup rates
+  (1 USD = Rs 280, 1 USDT = Rs 280) and keeps working.
 
 ## Follow us
 - WhatsApp Channel (live): https://whatsapp.com/channel/0029VbCinLy7YSd59nLvZe2k — shown in a

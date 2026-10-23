@@ -1,24 +1,68 @@
 
 let CURR='PKR';
-function fmt(p){
-  const el=p.closest('.card,.pcard'); if(!el) return;
+// Live rates model (Daniyal, 23 Oct 2026): backend base = original COST in PKR (data-cost).
+// Final PKR = cost x 1.25 (his 25% profit, applied in the browser). USD = final PKR / usd rate,
+// USDT = final PKR / usdt rate. Rates come from the Google Sheet feed (Worker 1 + 2);
+// FALLBACK rates apply instantly so prices never wait or break.
+const FALLBACK={usd:280,usdt:280};
+let RATES={usd:FALLBACK.usd,usdt:FALLBACK.usdt};
+const RATES_URL="https://script.google.com/macros/s/AKfycbz1LhPTZXt1kqcSiN-wK_CczzJlojhyqTdSahvdmvkwLc6w_Bfq1mLJZ0ZLR8tPNQVL/exec";
+function money(n){return n.toLocaleString('en-US');}
+function compute(card){
+  const cost=parseFloat(card.dataset.cost); if(isNaN(cost)) return null;
+  const pkr=Math.round(cost*1.25);
+  return {PKR:'Rs '+money(pkr),USD:'$'+(pkr/RATES.usd).toFixed(2),USDT:(pkr/RATES.usdt).toFixed(2)+' USDT'};
 }
-function setCurr(c,btn){
+function waLink(card,label){
+  const msg='Hi, I came from the Unlock Pro Tools website. I want to buy this package:
+Product: '+card.dataset.tool+'
+Package: '+card.dataset.package+'
+Duration: '+card.dataset.duration+'
+Price: '+label+'
+Please send me the payment and delivery details.';
+  return 'https://wa.me/923214378770?text='+encodeURIComponent(msg);
+}
+function renderPrices(){
+  document.querySelectorAll('[data-cost]').forEach(card=>{
+    const v=compute(card); if(!v) return;
+    const priceEl=card.querySelector('.price,.pprice');
+    if(priceEl) priceEl.textContent=v[CURR];
+    const wa=card.querySelector('a.wa');
+    if(wa) wa.href=waLink(card,v[CURR]);
+    const cu=card.querySelector('.cell-usd'); if(cu) cu.textContent=v.USD;
+    const ct=card.querySelector('.cell-usdt'); if(ct) ct.textContent=v.USDT;
+  });
+}
+function setCurr(c){
   CURR=c;
   document.querySelectorAll('.curr button').forEach(b=>b.classList.toggle('active',b.dataset.c===c));
-  const pk='price'+c.charAt(0)+c.slice(1).toLowerCase();
-  const wk='wa'+c.charAt(0)+c.slice(1).toLowerCase();
-  document.querySelectorAll('[data-wa-pkr]').forEach(card=>{
-    const priceEl=card.querySelector('.price,.pprice');
-    if(priceEl) priceEl.textContent=card.dataset[pk];
-    const wa=card.querySelector('.wa');
-    if(wa) wa.href=card.dataset[wk];
-  });
+  renderPrices();
   try{localStorage.setItem('upt-curr',c)}catch(e){}
 }
-document.querySelectorAll('.curr button').forEach(b=>b.addEventListener('click',()=>setCurr(b.dataset.c,b)));
-const saved=(()=>{try{return localStorage.getItem('upt-curr')}catch(e){return null}})();
-if(saved&&saved!=='PKR') setCurr(saved);
+document.querySelectorAll('.curr button').forEach(b=>b.addEventListener('click',()=>setCurr(b.dataset.c)));
+function applyRates(r){
+  if(r&&+r.usd>0) RATES.usd=+r.usd;
+  if(r&&+r.usdt>0) RATES.usdt=+r.usdt;
+  renderPrices();
+  const rl=document.getElementById('rateline');
+  if(rl){ rl.textContent="Today's rates: 1 USD = Rs "+RATES.usd.toFixed(2)+" · 1 USDT = Rs "+RATES.usdt.toFixed(2); rl.style.display=''; }
+}
+const savedC=(()=>{try{return localStorage.getItem('upt-curr')}catch(e){return null}})();
+if(savedC&&(savedC==='USD'||savedC==='USDT')){ CURR=savedC; document.querySelectorAll('.curr button').forEach(b=>b.classList.toggle('active',b.dataset.c===CURR)); }
+renderPrices();
+if(RATES_URL){
+  let done=false;
+  const ctl=('AbortController' in window)?new AbortController():null;
+  const to=setTimeout(()=>{ if(ctl) ctl.abort(); },7000);
+  fetch(RATES_URL,{signal:ctl?ctl.signal:undefined}).then(r=>r.json()).then(j=>{ done=true; clearTimeout(to); applyRates(j); }).catch(()=>{});
+  setTimeout(()=>{
+    if(done) return;
+    window.__uptRates=function(j){ applyRates(j); };
+    const sc=document.createElement('script');
+    sc.src=RATES_URL+(RATES_URL.includes('?')?'&':'?')+'callback=__uptRates';
+    document.head.appendChild(sc);
+  },3500);
+}
 const s=document.getElementById('search');
 const onHome=document.querySelectorAll('.card').length>0;
 function scrollToResults(){
