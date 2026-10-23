@@ -14,12 +14,8 @@ function compute(card){
   return {PKR:'Rs '+money(pkr),USD:'$'+(pkr/RATES.usd).toFixed(2),USDT:(pkr/RATES.usdt).toFixed(2)+' USDT'};
 }
 function waLink(card,label){
-  const msg='Hi, I came from the Unlock Pro Tools website. I want to buy this package:
-Product: '+card.dataset.tool+'
-Package: '+card.dataset.package+'
-Duration: '+card.dataset.duration+'
-Price: '+label+'
-Please send me the payment and delivery details.';
+  const NL=String.fromCharCode(10);
+  const msg=['Hi, I came from the Unlock Pro Tools website. I want to buy this package:','Product: '+card.dataset.tool,'Package: '+card.dataset.package,'Duration: '+card.dataset.duration,'Price: '+label,'Please send me the payment and delivery details.'].join(NL);
   return 'https://wa.me/923214378770?text='+encodeURIComponent(msg);
 }
 function renderPrices(){
