@@ -35,6 +35,11 @@ matches the price on screen.
 - If the rates feed is ever unreachable, the site falls back to built-in backup rates
   (1 USD = Rs 280, 1 USDT = Rs 280) and keeps working.
 
+## Layout note
+The header and the search/currency toolbar sit inside one sticky wrapper (`.topwrap`), so the
+toolbar always stays visible directly under the header while scrolling — it can never slide
+behind the header (bug fixed 23 Oct 2026).
+
 ## Follow us
 - WhatsApp Channel (live): https://whatsapp.com/channel/0029VbCinLy7YSd59nLvZe2k — shown in a
   "Never Miss a Price Drop" strip on the home page and every product page, in the FAQ, and in

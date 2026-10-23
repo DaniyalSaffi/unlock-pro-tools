@@ -18,6 +18,11 @@ WHAT IS INSIDE
 - products-data.json — all product data in one file, including each package's base cost
 - sitemap.xml + robots.txt — for Google
 
+LAYOUT NOTE
+The header and the toolbar (search + currency) are wrapped together in one sticky
+block (.topwrap), so the search box always stays visible under the header while
+scrolling. (Fix added 23 Oct 2026 — before this, the toolbar slid behind the header.)
+
 HOW PRICES WORK (live rates — 23 Oct 2026)
 Backend base value of every package = its original COST in PKR (costPkr in
 products-data.json). The website renders the final PKR price as cost x 1.25 (the 25%

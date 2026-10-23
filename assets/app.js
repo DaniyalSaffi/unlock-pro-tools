@@ -65,7 +65,8 @@ function scrollToResults(){
   const tb=document.querySelector('.toolbar');
   const main=document.querySelector('main');
   if(!main) return;
-  const y=main.getBoundingClientRect().top+window.scrollY-(tb?tb.offsetHeight:0)-4;
+  const hd=document.querySelector('header');
+  const y=main.getBoundingClientRect().top+window.scrollY-((hd?hd.offsetHeight:0)+(tb?tb.offsetHeight:0))-4;
   window.scrollTo({top:y,behavior:'smooth'});
 }
 function applySearch(fromInit){
