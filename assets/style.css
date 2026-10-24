@@ -96,3 +96,33 @@ table.plans th{background:var(--navy);color:#fff}
 .searchinfo button{margin-left:auto;background:var(--navy);color:#fff;border:none;padding:8px 14px;border-radius:18px;font-size:13.5px;font-weight:bold;cursor:pointer}
 body.searching .hero,body.searching .cats{display:none}
 .rateline{flex:1 1 100%;text-align:right;font-size:12.5px;color:#60738a;padding:0 2px}
+.promo-strip{display:flex;flex-direction:column;gap:10px;max-width:1200px;margin:0 auto;padding:14px 16px 0}
+.promo-strip-item{border-radius:14px;padding:14px 18px}
+.promo-strip-item b{display:block;font-size:16px;margin-bottom:3px}
+.promo-strip-item p{font-size:14px;line-height:1.55}
+.promo-strip-flash{background:var(--navy);color:#fff;border-left:4px solid var(--gold)}
+.promo-strip-bulk{background:rgba(14,124,123,.08);border:1px solid var(--teal);color:var(--navy)}
+.promo-badge{position:absolute;top:12px;right:12px;font-size:11.5px;font-weight:bold;padding:4px 9px;border-radius:12px;max-width:150px;text-align:center;line-height:1.3}
+.promo-badge.stacked{top:42px}
+.promo-badge-flash{background:#fff;color:var(--gold);border:1px solid var(--gold)}
+.promo-badge-bulk{background:var(--teal);color:#fff}
+.promo-line{font-size:12.5px;color:var(--muted);line-height:1.4}
+.promo-price s{color:var(--muted);font-weight:normal;margin-right:6px}
+.promo-box{border-radius:14px;padding:16px;margin:18px 0}
+.promo-box-flash{background:var(--navy);color:#fff;border-left:4px solid var(--gold)}
+.promo-box-bulk{background:rgba(14,124,123,.08);border:1px solid var(--teal);color:var(--navy)}
+.promo-box-label{font-weight:bold;font-size:16.5px}
+.promo-box-terms{font-size:14px;line-height:1.55;margin:6px 0 12px}
+.promo-stepper{display:flex;gap:8px;align-items:center}
+.promo-stepper button{min-width:44px;height:44px;border-radius:10px;border:1.5px solid #C9D6DC;background:#fff;font-size:21px;cursor:pointer;color:var(--navy)}
+.promo-box-flash .promo-stepper button{background:rgba(255,255,255,.12);color:#fff;border-color:rgba(255,255,255,.35)}
+.promo-stepper input{width:76px;height:44px;text-align:center;font-size:16px;font-weight:bold;border-radius:10px;border:1.5px solid #C9D6DC;color:var(--navy)}
+.promo-summary{font-weight:bold;color:var(--navy);margin-top:12px;line-height:1.65}
+.promo-box-flash .promo-summary{color:#fff}
+.promo-progress{font-size:13.5px;color:var(--muted);margin-top:6px}
+.promo-box-flash .promo-progress{color:#dbe6f2}
+.promo-countdown{font-size:13.5px;margin-top:8px}
+.promo-terms{margin-top:12px;font-size:13.5px;line-height:1.6}
+.promo-terms summary{cursor:pointer;font-weight:bold;color:var(--teal)}
+.promo-box-flash .promo-terms summary{color:var(--gold)}
+@media(max-width:560px){.promo-badge{font-size:11px;max-width:120px}}

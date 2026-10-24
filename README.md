@@ -57,3 +57,11 @@ Navy `#0A2540` + Teal `#0E7C7B` + Gold `#C9A227`, order buttons in WhatsApp gree
 
 The site is plain HTML/CSS/JS — it can move to Hostinger or GoHighLevel later as-is,
 with no rebuild needed.
+
+## Promotions (added 24 Oct 2026)
+The site supports config-driven flash sales and bulk rewards (for example buy 10 of
+the same package, get 1 free). Promotions are configured in promotions.json at the
+project root and rendered by JavaScript from assets/promos.js; with every rule
+disabled the site behaves exactly as before. The config file, the seller guide
+(PROMOTIONS-GUIDE.md) and the audit report are private working files and are never
+part of this repo.
