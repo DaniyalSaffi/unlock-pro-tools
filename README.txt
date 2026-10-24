@@ -57,3 +57,11 @@ WHATSAPP ORDERING
 Every Order button goes to +92 321 4378770 with a ready message containing the product,
 package, duration and the price in the currency the customer selected (PKR/USD/USDT),
 calculated at the moment of the click.
+
+CART, ABOUT AND BLOG (added 25 Oct 2026)
+- Cart: several packages can be sent as one WhatsApp message. Offers are counted
+  per product. The cart page is never indexed and never in the sitemap.
+- About: a page about the store with the founder block and a link to the blog.
+- Blog: guides on ordering, offers, delivery types and prices.
+- Cross-product rewards are supported too (a set quantity of one package plus a
+  fixed free item). The shipped example rule is disabled.

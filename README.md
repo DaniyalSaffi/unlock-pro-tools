@@ -62,6 +62,15 @@ with no rebuild needed.
 The site supports config-driven flash sales and bulk rewards (for example buy 10 of
 the same package, get 1 free). Promotions are configured in promotions.json at the
 project root and rendered by JavaScript from assets/promos.js; with every rule
-disabled the site behaves exactly as before. The config file, the seller guide
-(PROMOTIONS-GUIDE.md) and the audit report are private working files and are never
+disabled the site behaves exactly as before. The config file, the seller guide and the audit report are private working files and are never
 part of this repo.
+
+## Cart, About and Blog (added 25 Oct 2026)
+- Cart: customers can add several packages and send them as one WhatsApp message.
+  Offers are counted per product, and the message is built fresh from current
+  prices at the moment of the tap. The cart page itself is never indexed.
+- About: a page about the store with the founder block and a link to the blog.
+- Blog: guides on ordering, offers, delivery types and prices in PKR, USD and USDT.
+- Cross-product rewards are also supported (buy a set quantity of one package,
+  get a fixed free item). The shipped example rule is disabled, so it changes
+  nothing on the live site until it is enabled in the config and rebuilt.

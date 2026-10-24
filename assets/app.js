@@ -40,12 +40,14 @@ function setCurr(c){
   document.querySelectorAll('.curr button').forEach(b=>b.classList.toggle('active',b.dataset.c===c));
   renderPrices();
   try{localStorage.setItem('upt-curr',c)}catch(e){}
+  try{document.dispatchEvent(new CustomEvent('upt:currency',{detail:{currency:c}}));}catch(e){}
 }
 document.querySelectorAll('.curr button').forEach(b=>b.addEventListener('click',()=>setCurr(b.dataset.c)));
 function applyRates(r){
   if(r&&+r.usd>0) RATES.usd=+r.usd;
   if(r&&+r.usdt>0) RATES.usdt=+r.usdt;
   renderPrices();
+  try{document.dispatchEvent(new CustomEvent('upt:rates'));}catch(e){}
   const rl=document.getElementById('rateline');
   if(rl){ rl.textContent="Today's rates: 1 USD = Rs "+RATES.usd.toFixed(2)+" · 1 USDT = Rs "+RATES.usdt.toFixed(2); rl.style.display=''; }
 }
@@ -66,7 +68,7 @@ if(RATES_URL){
   },3500);
 }
 const s=document.getElementById('search');
-const onHome=document.querySelectorAll('.card').length>0;
+const onHome=document.querySelectorAll('.card[data-pid]').length>0;
 function scrollToResults(){
   const tb=document.querySelector('.toolbar');
   const main=document.querySelector('main');
@@ -112,8 +114,8 @@ if(s){
     const clr=document.getElementById('clearsearch');
     if(clr) clr.addEventListener('click',()=>{ s.value=''; applySearch(false); s.focus(); });
   }else{
-    // Product pages have no cards: searching goes to the home page results.
-    const go=()=>{ const v=s.value.trim(); if(v) location.href='../index.html?q='+encodeURIComponent(v); };
+    // Pages without product cards: searching goes to the home page results.
+    const go=()=>{ const v=s.value.trim(); if(v) location.href=(s.getAttribute('data-root')||'')+'index.html?q='+encodeURIComponent(v); };
     s.addEventListener('keydown',e=>{ if(e.key==='Enter'){ e.preventDefault(); go(); }});
     s.addEventListener('search',go);
   }
@@ -183,8 +185,13 @@ function orderLines(res, totalLabel){
   if (res.status === 'applied') {
     lines.push('Offer: ' + pr.label + ' (' + pr.id + ')');
     lines.push('Quantity to pay for: ' + res.paidUnits);
-    if (pr.reward && pr.reward.kind === 'free_units') lines.push('Free units: ' + res.freeUnits);
-    lines.push('Total units: ' + res.totalUnits);
+    if (pr.reward && pr.reward.kind === 'free_item' && res.freeItem) {
+      var dur = res.freeItem.duration && res.freeItem.duration !== 'Not Stated' ? ' | ' + res.freeItem.duration : '';
+      lines.push('Free item: ' + res.freeItem.tool + ' | ' + res.freeItem.package + dur + ' x ' + res.freeUnits);
+    } else {
+      if (pr.reward && pr.reward.kind === 'free_units') lines.push('Free units: ' + res.freeUnits);
+      lines.push('Total units: ' + res.totalUnits);
+    }
     lines.push('Total price: ' + totalLabel);
     if (pr.limits && pr.limits.per_customer_note) lines.push('Note: ' + pr.limits.per_customer_note);
   } else if (res.paidUnits > 1 && res.blockedReason !== 'qty') {
@@ -257,10 +264,11 @@ function renderCardPromos(){
     var totalLabel = fmtCurrTotal(res.totalPkr);
     var showBadge = !!(pr.display && pr.display.card_badge);
     var isSale = !!(pr.reward && pr.reward.kind === 'percent_off' && res.status === 'applied');
+    var isBundle = !!(pr.reward && pr.reward.kind === 'free_item');
     if (showBadge) {
       var badge = document.createElement('span');
       badge.className = 'promo-badge ' + (pr.type === 'flash_sale' ? 'promo-badge-flash' : 'promo-badge-bulk') + (card.querySelector('.badge') ? ' stacked' : '');
-      badge.textContent = pr.label;
+      badge.textContent = (isBundle && pr.badge_text) ? pr.badge_text : pr.label;
       card.appendChild(badge);
       if (isSale) {
         if (pe) {
@@ -274,6 +282,11 @@ function renderCardPromos(){
         line.className = 'promo-line';
         line.textContent = 'Ends ' + fmtEndShort(pr.schedule.end);
         if (pe) pe.parentNode.insertBefore(line, pe.nextSibling);
+      } else if (isBundle && res.freeItem) {
+        var line3 = document.createElement('div');
+        line3.className = 'promo-line';
+        line3.textContent = 'Buy ' + (pr.reward.buy_qty || 1) + ', get ' + res.freeItem.tool + ' ' + res.freeItem.package + ' free';
+        if (pe) pe.parentNode.insertBefore(line3, pe.nextSibling);
       } else {
         var line2 = document.createElement('div');
         line2.className = 'promo-line';
@@ -414,8 +427,13 @@ function updatePromoBox(box, pcard, pr, res){
   if (sum) {
     if (res.status === 'applied') {
       var parts = ['Pay for ' + res.paidUnits];
-      if (pr.reward && pr.reward.kind === 'free_units') parts.push('Free ' + res.freeUnits);
-      parts.push('Total units ' + res.totalUnits);
+      if (pr.reward && pr.reward.kind === 'free_item' && res.freeItem) {
+        var fdur = res.freeItem.duration && res.freeItem.duration !== 'Not Stated' ? ' (' + res.freeItem.duration + ')' : '';
+        parts.push('Free item: ' + res.freeItem.tool + ' ' + res.freeItem.package + fdur + ' x ' + res.freeUnits);
+      } else {
+        if (pr.reward && pr.reward.kind === 'free_units') parts.push('Free ' + res.freeUnits);
+        parts.push('Total units ' + res.totalUnits);
+      }
       parts.push('Total price: ' + totalLabel);
       sum.textContent = parts.join(' · ');
     } else if (res.status === 'progress') {
@@ -427,8 +445,12 @@ function updatePromoBox(box, pcard, pr, res){
   var prog = box.querySelector('.promo-progress');
   if (prog) {
     if (res.status === 'progress') {
-      prog.textContent = 'Add ' + res.unitsToNextReward + ' more to get ' +
-        (pr.reward ? pr.reward.free_qty : 1) + ' free';
+      if (pr.reward && pr.reward.kind === 'free_item' && res.freeItem) {
+        prog.textContent = 'Add ' + res.unitsToNextReward + ' more to get ' + res.freeItem.tool + ' ' + res.freeItem.package + ' free';
+      } else {
+        prog.textContent = 'Add ' + res.unitsToNextReward + ' more to get ' +
+          (pr.reward ? pr.reward.free_qty : 1) + ' free';
+      }
     } else { prog.textContent = ''; }
   }
   var cd = box.querySelector('.promo-countdown');
