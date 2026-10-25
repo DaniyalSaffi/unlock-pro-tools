@@ -194,16 +194,108 @@
     return { lines: outLines, freeRows: freeRows, totalPkr: totalPkr, valid: valid,
       invalidLines: invalidLines, warnings: warnings };
   }
-  function buildWaUrl(o){
-    var NL = String.fromCharCode(10);
-    var lines = ['Hi, I came from the Unlock Pro Tools website. I want to buy this package:',
-      'Product: ' + o.tool, 'Package: ' + o.pkg, 'Duration: ' + o.duration,
-      'Price: ' + o.priceLabel];
-    var extra = o.extraLines || [];
-    for (var i = 0; i < extra.length; i++) lines.push(extra[i]);
-    lines.push('Please send me the payment and delivery details.');
-    return 'https://wa.me/' + o.waNumber + '?text=' + encodeURIComponent(lines.join(NL));
+  // ---------- WhatsApp messages: one shared template set (Oct 2026 audit) ----------
+  // PKR is authoritative. USD/USDT are derived once per figure and rounded UP
+  // to the cent (seller's favour). A cart total in USD/USDT is the sum of the
+  // displayed line totals; the PKR total is the exact sum of line PKRs.
+  function money(n){ return n.toLocaleString('en-US'); }
+  function toCents(pkr, rate){
+    if (typeof rate !== 'number' || !(rate > 0)) rate = 280;
+    return Math.ceil(pkr / rate * 100 - 1e-9);
   }
-  return { resolve: resolve, resolveCart: resolveCart, buildWaUrl: buildWaUrl,
+  function centsStr(c){ return (c / 100).toFixed(2); }
+  function dualPrice(pkr, currency, rate){
+    var pkrLabel = 'PKR ' + money(pkr);
+    if (currency === 'USD') return 'USD ' + centsStr(toCents(pkr, rate)) + ' (' + pkrLabel + ')';
+    if (currency === 'USDT') return 'USDT ' + centsStr(toCents(pkr, rate)) + ' (' + pkrLabel + ')';
+    return pkrLabel;
+  }
+  function fmtRate(rate){
+    if (typeof rate !== 'number' || !(rate > 0)) rate = 280;
+    return (rate % 1 === 0) ? String(rate) : rate.toFixed(2);
+  }
+  function rateLine(currency, rate){
+    if (currency === 'PKR') return null;
+    return 'Rate used: 1 ' + currency + ' = PKR ' + fmtRate(rate);
+  }
+  function freeItemLine(freeItem, freeUnits){
+    if (!freeItem || !(freeUnits > 0)) return null;
+    var dur = (freeItem.duration && freeItem.duration !== 'Not Stated') ? ' | ' + freeItem.duration : '';
+    return 'Free item: ' + freeItem.tool + ' | ' + freeItem.package + dur + ' x ' + freeUnits;
+  }
+  function qtyLine(qty, freeUnits){
+    if (freeUnits > 0) return qty + ' paid + ' + freeUnits + ' free';
+    return String(qty);
+  }
+  function buildOrderMessage(o){
+    var NL = String.fromCharCode(10);
+    var lines = ["Hello, I'd like to order from " + (o.brand || 'Unlock Pro Tools') + '.', ''];
+    lines.push('Product: ' + o.tool);
+    lines.push('Package: ' + o.pkg);
+    lines.push('Duration: ' + o.duration);
+    lines.push('Quantity: ' + qtyLine(o.qty, o.freeUnits || 0));
+    lines.push('Price: ' + dualPrice(o.unitPkr, o.currency, o.rate));
+    if (o.offer) lines.push('Offer: ' + o.offer.label + ' (' + o.offer.id + ')');
+    var fl = freeItemLine(o.freeItem, o.freeUnits || 0);
+    if (fl) lines.push(fl);
+    var totalLabel;
+    if (o.currency === 'PKR') totalLabel = 'PKR ' + money(o.totalPkr);
+    else totalLabel = dualPrice(o.totalPkr, o.currency, o.rate);
+    lines.push('Total: ' + totalLabel);
+    var rl = rateLine(o.currency, o.rate);
+    if (rl) lines.push(rl);
+    if (o.note) lines.push('Note: ' + o.note);
+    lines.push('');
+    lines.push('Please confirm availability and how to pay.');
+    return lines.join(NL);
+  }
+  function buildCartMessage(o){
+    var NL = String.fromCharCode(10);
+    var lines = ["Hello, I'd like to order from " + (o.brand || 'Unlock Pro Tools') + '.', ''];
+    var totalCents = 0;
+    var cartLines = o.lines || [];
+    for (var i = 0; i < cartLines.length; i++) {
+      var ln = cartLines[i];
+      lines.push((i + 1) + '. Product: ' + ln.tool);
+      lines.push('Package: ' + ln.pkg);
+      lines.push('Duration: ' + ln.duration);
+      lines.push('Quantity: ' + qtyLine(ln.qty, ln.freeUnits || 0));
+      lines.push('Line total: ' + dualPrice(ln.linePkr, o.currency, o.rate));
+      if (ln.offer) lines.push('Offer: ' + ln.offer.label + ' (' + ln.offer.id + ')');
+      var fl2 = freeItemLine(ln.freeItem, ln.freeUnits || 0);
+      if (fl2) lines.push(fl2);
+      lines.push('');
+      if (o.currency !== 'PKR') totalCents += toCents(ln.linePkr, o.rate);
+    }
+    var totalLabel;
+    if (o.currency === 'PKR') totalLabel = 'PKR ' + money(o.totalPkr);
+    else totalLabel = o.currency + ' ' + centsStr(totalCents) + ' (PKR ' + money(o.totalPkr) + ')';
+    lines.push('Total: ' + totalLabel);
+    var rl2 = rateLine(o.currency, o.rate);
+    if (rl2) lines.push(rl2);
+    var notes = o.notes || [];
+    for (var n = 0; n < notes.length; n++) lines.push('Note: ' + notes[n]);
+    lines.push('');
+    lines.push('Please confirm availability and how to pay.');
+    return lines.join(NL);
+  }
+  function buildQuestionMessage(o){
+    var NL = String.fromCharCode(10);
+    var lines = ['Hello, I have a question about this package.', ''];
+    lines.push('Product: ' + o.tool);
+    lines.push('Package: ' + o.pkg);
+    lines.push('Duration: ' + o.duration);
+    lines.push('Price: ' + dualPrice(o.unitPkr, o.currency, o.rate));
+    lines.push('');
+    lines.push('Please share more details.');
+    return lines.join(NL);
+  }
+  function waUrl(waNumber, text){
+    return 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(text);
+  }
+  return { resolve: resolve, resolveCart: resolveCart, waUrl: waUrl,
+    dualPrice: dualPrice, toCents: toCents, rateLine: rateLine,
+    buildOrderMessage: buildOrderMessage, buildCartMessage: buildCartMessage,
+    buildQuestionMessage: buildQuestionMessage,
     scheduleActive: scheduleActive, parseQty: parseQty };
 });

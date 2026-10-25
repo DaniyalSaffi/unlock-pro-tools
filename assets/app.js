@@ -7,21 +7,52 @@ let CURR='PKR';
 const FALLBACK={usd:280,usdt:280};
 let RATES={usd:FALLBACK.usd,usdt:FALLBACK.usdt};
 const RATES_URL="https://script.google.com/macros/s/AKfycbz1LhPTZXt1kqcSiN-wK_CczzJlojhyqTdSahvdmvkwLc6w_Bfq1mLJZ0ZLR8tPNQVL/exec";
+const RATES_MAX_DEV=0.3;
 function money(n){return n.toLocaleString('en-US');}
+function ceilCent(x){ return Math.ceil(x * 100 - 1e-9) / 100; }
 function compute(card){
   const cost=parseFloat(card.dataset.cost); if(isNaN(cost)) return null;
   const pkr=Math.round(cost*1.25);
-  return {PKR:'Rs '+money(pkr),USD:'$'+(pkr/RATES.usd).toFixed(2),USDT:(pkr/RATES.usdt).toFixed(2)+' USDT'};
+  return {PKR:'Rs '+money(pkr),USD:'$'+ceilCent(pkr/RATES.usd).toFixed(2),USDT:ceilCent(pkr/RATES.usdt).toFixed(2)+' USDT'};
 }
-function waLink(card,label,extraLines){
-  if (typeof PromoEngine !== 'undefined' && PromoEngine.buildWaUrl) {
-    return PromoEngine.buildWaUrl({ waNumber:'923214378770', tool:card.dataset.tool,
-      pkg:card.dataset.package, duration:card.dataset.duration,
-      priceLabel:label, extraLines:extraLines || [] });
+function currRate(){ return CURR === 'USD' ? RATES.usd : RATES.usdt; }
+function waLinkFor(card,res,qty){
+  const list=parseFloat(card.dataset.listPkr);
+  let unitPkr=list, totalPkr=list*(qty||1), offer=null, freeItem=null, freeUnits=0, note=null;
+  if (res) {
+    totalPkr=res.totalPkr;
+    if (res.status === 'applied' && res.promo) {
+      offer={label:res.promo.label,id:res.promo.id};
+      if (res.promo.reward && res.promo.reward.kind === 'percent_off') unitPkr=res.unitPkrAfterDiscount;
+      if (res.freeUnits > 0) freeUnits=res.freeUnits;
+      if (res.freeItem && res.freeUnits > 0) { freeItem=res.freeItem; }
+      if (res.promo.limits && res.promo.limits.per_customer_note) note=res.promo.limits.per_customer_note;
+    }
+  }
+  if (typeof PromoEngine !== 'undefined' && PromoEngine.buildOrderMessage) {
+    const msg=PromoEngine.buildOrderMessage({brand:'Unlock Pro Tools',tool:card.dataset.tool,
+      pkg:card.dataset.package,duration:card.dataset.duration,qty:qty||1,unitPkr:unitPkr,
+      totalPkr:totalPkr,currency:CURR,rate:currRate(),offer:offer,freeItem:freeItem,
+      freeUnits:freeUnits,note:note});
+    return PromoEngine.waUrl('923214378770',msg);
   }
   const NL=String.fromCharCode(10);
-  const msg=['Hi, I came from the Unlock Pro Tools website. I want to buy this package:','Product: '+card.dataset.tool,'Package: '+card.dataset.package,'Duration: '+card.dataset.duration,'Price: '+label,'Please send me the payment and delivery details.'].join(NL);
-  return 'https://wa.me/923214378770?text='+encodeURIComponent(msg);
+  const lines=["Hello, I'd like to order from Unlock Pro Tools.",'','Product: '+card.dataset.tool,
+    'Package: '+card.dataset.package,'Duration: '+card.dataset.duration,'Quantity: '+(qty||1),
+    'Price: PKR '+money(unitPkr),'Total: PKR '+money(totalPkr),'',
+    'Please confirm availability and how to pay.'];
+  return 'https://wa.me/923214378770?text='+encodeURIComponent(lines.join(NL));
+}
+function renderStickyQuestion(pcard,res){
+  const st=document.querySelector('.stickywa'); if(!st || !pcard) return;
+  const list=parseFloat(pcard.dataset.listPkr);
+  let unitPkr=list;
+  if (res && res.status === 'applied' && res.promo && res.promo.reward && res.promo.reward.kind === 'percent_off') unitPkr=res.unitPkrAfterDiscount;
+  if (typeof PromoEngine !== 'undefined' && PromoEngine.buildQuestionMessage) {
+    const msg=PromoEngine.buildQuestionMessage({tool:pcard.dataset.tool,pkg:pcard.dataset.package,
+      duration:pcard.dataset.duration,unitPkr:unitPkr,currency:CURR,rate:currRate()});
+    st.href=PromoEngine.waUrl('923214378770',msg);
+  }
 }
 function renderPrices(){
   document.querySelectorAll('[data-cost]').forEach(card=>{
@@ -29,35 +60,61 @@ function renderPrices(){
     const priceEl=card.querySelector('.price,.pprice');
     if(priceEl) priceEl.textContent=v[CURR];
     const wa=card.querySelector('a.wa');
-    if(wa) wa.href=waLink(card,v[CURR]);
+    if(wa) wa.href=waLinkFor(card,null,1);
     const cu=card.querySelector('.cell-usd'); if(cu) cu.textContent=v.USD;
     const ct=card.querySelector('.cell-usdt'); if(ct) ct.textContent=v.USDT;
   });
+  document.querySelectorAll('a.wa-plan').forEach(a=>{ a.href=waLinkFor({dataset:a.dataset},null,1); });
+  document.querySelectorAll('.plan-price').forEach(el=>{
+    const pkr=parseFloat(el.dataset.listPkr); if(isNaN(pkr)) return;
+    el.textContent=CURR==='PKR' ? 'Rs '+money(pkr) : CURR==='USD' ? '$'+ceilCent(pkr/RATES.usd).toFixed(2) : ceilCent(pkr/RATES.usdt).toFixed(2)+' USDT';
+  });
   renderPromos();
+}
+function setPkrUnder(pcard,pkrNum){
+  const pu=pcard.querySelector('.pkrunder');
+  if(pu) pu.textContent=CURR==='PKR' ? '' : 'PKR '+money(pkrNum);
 }
 function setCurr(c){
   CURR=c;
-  document.querySelectorAll('.curr button').forEach(b=>b.classList.toggle('active',b.dataset.c===c));
+  document.querySelectorAll('.curr button').forEach(b=>{ b.classList.toggle('active',b.dataset.c===c); b.setAttribute('aria-pressed', b.dataset.c===c ? 'true' : 'false'); });
   renderPrices();
   try{localStorage.setItem('upt-curr',c)}catch(e){}
   try{document.dispatchEvent(new CustomEvent('upt:currency',{detail:{currency:c}}));}catch(e){}
 }
 document.querySelectorAll('.curr button').forEach(b=>b.addEventListener('click',()=>setCurr(b.dataset.c)));
+if(typeof window!=='undefined'&&window.addEventListener){
+  window.addEventListener('storage',function(ev){
+    if(ev.key==='upt-curr'&&(ev.newValue==='PKR'||ev.newValue==='USD'||ev.newValue==='USDT')) setCurr(ev.newValue);
+  });
+  window.addEventListener('pageshow',function(ev){
+    if(!ev.persisted) return;
+    try{
+      var s=localStorage.getItem('upt-curr');
+      if((s==='PKR'||s==='USD'||s==='USDT')&&s!==CURR) setCurr(s); else renderPrices();
+    }catch(e){ renderPrices(); }
+  });
+}
+function validRate(v, fb){
+  const n = +v;
+  if (!isFinite(n) || n <= 0) return false;
+  return Math.abs(n - fb) / fb <= RATES_MAX_DEV;
+}
 function applyRates(r){
-  if(r&&+r.usd>0) RATES.usd=+r.usd;
-  if(r&&+r.usdt>0) RATES.usdt=+r.usdt;
+  if (r && validRate(r.usd, FALLBACK.usd)) RATES.usd = +r.usd;
+  if (r && validRate(r.usdt, FALLBACK.usdt)) RATES.usdt = +r.usdt;
   renderPrices();
   try{document.dispatchEvent(new CustomEvent('upt:rates'));}catch(e){}
   const rl=document.getElementById('rateline');
   if(rl){ rl.textContent="Today's rates: 1 USD = Rs "+RATES.usd.toFixed(2)+" · 1 USDT = Rs "+RATES.usdt.toFixed(2); rl.style.display=''; }
 }
 const savedC=(()=>{try{return localStorage.getItem('upt-curr')}catch(e){return null}})();
-if(savedC&&(savedC==='USD'||savedC==='USDT')){ CURR=savedC; document.querySelectorAll('.curr button').forEach(b=>b.classList.toggle('active',b.dataset.c===CURR)); }
+if(savedC&&(savedC==='USD'||savedC==='USDT')){ CURR=savedC; document.querySelectorAll('.curr button').forEach(b=>{ b.classList.toggle('active',b.dataset.c===CURR); b.setAttribute('aria-pressed', b.dataset.c===CURR ? 'true' : 'false'); }); }
 renderPrices();
 if(RATES_URL){
   let done=false;
   const ctl=('AbortController' in window)?new AbortController():null;
-  const to=setTimeout(()=>{ if(ctl) ctl.abort(); },7000);
+  const to=setTimeout(()=>{ if(ctl) ctl.abort(); },6000);
   fetch(RATES_URL,{signal:ctl?ctl.signal:undefined}).then(r=>r.json()).then(j=>{ done=true; clearTimeout(to); applyRates(j); }).catch(()=>{});
   setTimeout(()=>{
     if(done) return;
@@ -83,12 +140,18 @@ function applySearch(fromInit){
   const wasSearching=document.body.classList.contains('searching');
   document.querySelectorAll('.card').forEach(card=>{
     const hit=!q||card.dataset.name.includes(q);
-    card.style.display=hit?'':'none'; if(hit){any=true;count++;}
+    card.style.display=hit?'':'none'; if(hit){any=true;}
   });
   document.querySelectorAll('section.cat').forEach(sec=>{
     const vis=[...sec.querySelectorAll('.card')].some(c=>c.style.display!=='none');
     sec.style.display=vis?'':'none';
+    if(vis) count+=[...sec.querySelectorAll('.card')].filter(c=>c.style.display!=='none').length;
   });
+  const bs=document.querySelector('section.bestsellers');
+  if(bs){
+    const vis=[...bs.querySelectorAll('.card')].some(c=>c.style.display!=='none');
+    bs.style.display=(!q||vis)?'':'none';
+  }
   const nr=document.getElementById('noresult'); if(nr) nr.style.display=(q&&!any)?'block':'none';
   const info=document.getElementById('searchinfo');
   if(q){
@@ -113,6 +176,23 @@ if(s){
     if(q0){ s.value=q0; applySearch(true); }
     const clr=document.getElementById('clearsearch');
     if(clr) clr.addEventListener('click',()=>{ s.value=''; applySearch(false); s.focus(); });
+    document.querySelectorAll('#noresult [data-cat]').forEach(b=>b.addEventListener('click',()=>{
+      s.value=''; applySearch(false);
+      const sec=document.getElementById(b.dataset.cat);
+      if(sec) sec.scrollIntoView();
+    }));
+    const sortSel=document.getElementById('sortsel');
+    if(sortSel) sortSel.addEventListener('change',()=>{
+      const mode=sortSel.value;
+      document.querySelectorAll('section.cat .grid').forEach(grid=>{
+        const cards=[...grid.querySelectorAll('.card')];
+        cards.forEach((c,i)=>{ if(c.dataset.orig===undefined) c.dataset.orig=String(i); });
+        if(mode==='default') cards.sort((a,b)=>+a.dataset.orig-+b.dataset.orig);
+        else if(mode==='asc') cards.sort((a,b)=>parseFloat(a.dataset.listPkr)-parseFloat(b.dataset.listPkr));
+        else cards.sort((a,b)=>parseFloat(b.dataset.listPkr)-parseFloat(a.dataset.listPkr));
+        cards.forEach(c=>grid.appendChild(c));
+      });
+    });
   }else{
     // Pages without product cards: searching goes to the home page results.
     const go=()=>{ const v=s.value.trim(); if(v) location.href=(s.getAttribute('data-root')||'')+'index.html?q='+encodeURIComponent(v); };
@@ -148,8 +228,8 @@ function pickPromo(pid, now){
   return cands[0];
 }
 function fmtCurrTotal(pkr){
-  if (CURR === 'USD') return '$' + (pkr / RATES.usd).toFixed(2);
-  if (CURR === 'USDT') return (pkr / RATES.usdt).toFixed(2) + ' USDT';
+  if (CURR === 'USD') return '$' + ceilCent(pkr / RATES.usd).toFixed(2);
+  if (CURR === 'USDT') return ceilCent(pkr / RATES.usdt).toFixed(2) + ' USDT';
   return 'Rs ' + money(pkr);
 }
 function fmtEndShort(iso){
@@ -178,27 +258,6 @@ function promoProduct(card){
   var cost = parseFloat(card.dataset.cost);
   var list = parseFloat(card.dataset.listPkr);
   return { pid: card.dataset.pid || '', costPkr: cost, listPkr: list };
-}
-function orderLines(res, totalLabel){
-  if (!res || !res.promo) return [];
-  var pr = res.promo, lines = [];
-  if (res.status === 'applied') {
-    lines.push('Offer: ' + pr.label + ' (' + pr.id + ')');
-    lines.push('Quantity to pay for: ' + res.paidUnits);
-    if (pr.reward && pr.reward.kind === 'free_item' && res.freeItem) {
-      var dur = res.freeItem.duration && res.freeItem.duration !== 'Not Stated' ? ' | ' + res.freeItem.duration : '';
-      lines.push('Free item: ' + res.freeItem.tool + ' | ' + res.freeItem.package + dur + ' x ' + res.freeUnits);
-    } else {
-      if (pr.reward && pr.reward.kind === 'free_units') lines.push('Free units: ' + res.freeUnits);
-      lines.push('Total units: ' + res.totalUnits);
-    }
-    lines.push('Total price: ' + totalLabel);
-    if (pr.limits && pr.limits.per_customer_note) lines.push('Note: ' + pr.limits.per_customer_note);
-  } else if (res.paidUnits > 1 && res.blockedReason !== 'qty') {
-    lines.push('Quantity: ' + res.paidUnits);
-    lines.push('Total price: ' + totalLabel);
-  }
-  return lines;
 }
 function renderStrip(){
   var box = document.getElementById('promo-strip');
@@ -252,13 +311,13 @@ function renderCardPromos(){
     if (!wa || !base) return;
     var pr = pickPromo(card.dataset.pid || '', now);
     if (!pr) {
-      wa.href = waLink(card, base[CURR]);
+      wa.href = waLinkFor(card, null, 1);
       return;
     }
     var res = PromoEngine.resolve({ product: promoProduct(card), qty: 1, now: now, promos: getPromos() });
     if (res.status === 'blocked' && res.blockedReason === 'qty') return;
     if (res.status !== 'applied' && res.status !== 'progress') {
-      wa.href = waLink(card, base[CURR]);
+      wa.href = waLinkFor(card, null, 1);
       return;
     }
     var totalLabel = fmtCurrTotal(res.totalPkr);
@@ -294,7 +353,7 @@ function renderCardPromos(){
         if (pe) pe.parentNode.insertBefore(line2, pe.nextSibling);
       }
     }
-    wa.href = waLink(card, isSale ? fmtCurrTotal(res.unitPkrAfterDiscount) : base[CURR], orderLines(res, totalLabel));
+    wa.href = waLinkFor(card, res, 1);
   });
 }
 var PROMO_QTY = 1;
@@ -315,7 +374,9 @@ function renderProductPromo(){
   if (!pr) {
     if (old) old.remove();
     PROMO_QTY = 1;
-    if (wa && base) wa.href = waLink(pcard, base[CURR]);
+    if (wa && base) wa.href = waLinkFor(pcard, null, 1);
+    setPkrUnder(pcard, parseFloat(pcard.dataset.listPkr) || 0);
+    renderStickyQuestion(pcard, null);
     return;
   }
   var showBox = !!(pr.display && pr.display.product_page);
@@ -333,7 +394,9 @@ function renderProductPromo(){
     if (wa && base) {
       var ul = base[CURR];
       if (res.status === 'applied' && pr.reward && pr.reward.kind === 'percent_off') ul = fmtCurrTotal(res.unitPkrAfterDiscount);
-      wa.href = waLink(pcard, ul, orderLines(res, fmtCurrTotal(res.totalPkr)));
+      wa.href = waLinkFor(pcard, res, qty);
+      setPkrUnder(pcard, (res.status === 'applied' && pr.reward && pr.reward.kind === 'percent_off') ? res.unitPkrAfterDiscount : parseFloat(pcard.dataset.listPkr) || 0);
+      renderStickyQuestion(pcard, res);
     }
     return;
   }
@@ -352,7 +415,7 @@ function buildPromoBox(pcard, pr){
   var terms = document.createElement('p'); terms.className = 'promo-box-terms'; terms.textContent = pr.terms; box.appendChild(terms);
   var stepper = document.createElement('div'); stepper.className = 'promo-stepper';
   var minus = document.createElement('button'); minus.type = 'button'; minus.className = 'promo-minus'; minus.textContent = '−'; minus.setAttribute('aria-label', 'Decrease quantity');
-  var input = document.createElement('input'); input.className = 'promo-qty'; input.type = 'text'; input.setAttribute('inputmode', 'numeric'); input.setAttribute('autocomplete', 'off'); input.value = String(PROMO_QTY);
+  var input = document.createElement('input'); input.className = 'promo-qty'; input.type = 'text'; input.setAttribute('inputmode', 'numeric'); input.setAttribute('autocomplete', 'off'); input.setAttribute('aria-label', 'Quantity'); input.value = String(PROMO_QTY);
   var plus = document.createElement('button'); plus.type = 'button'; plus.className = 'promo-plus'; plus.textContent = '+'; plus.setAttribute('aria-label', 'Increase quantity');
   stepper.appendChild(minus); stepper.appendChild(input); stepper.appendChild(plus); box.appendChild(stepper);
   var summary = document.createElement('div'); summary.className = 'promo-summary'; box.appendChild(summary);
@@ -373,11 +436,16 @@ function buildPromoBox(pcard, pr){
   else pcard.appendChild(box);
   minus.addEventListener('click', function(){ setPromoQty(PROMO_QTY - 1); });
   plus.addEventListener('click', function(){ setPromoQty(PROMO_QTY + 1); });
+  // Never silently reinterpret input: a paste that is not all digits is
+  // refused, and a typed non-digit restores the current quantity.
+  input.addEventListener('paste', function(ev){
+    var t = (ev.clipboardData && ev.clipboardData.getData('text')) || '';
+    if (!/^[0-9]+$/.test(t.trim())) { ev.preventDefault(); }
+  });
   input.addEventListener('input', function(){
-    var v = input.value.replace(/[^0-9]/g, '');
-    if (v !== input.value) input.value = v;
-    if (v === '') { setPromoQtyInvalid(); return; }
-    setPromoQty(parseInt(v, 10), true);
+    if (!/^[0-9]*$/.test(input.value)) { input.value = String(PROMO_QTY); return; }
+    if (input.value === '') { setPromoQtyInvalid(); return; }
+    setPromoQty(parseInt(input.value, 10), true);
   });
   input.addEventListener('blur', function(){
     if (input.value === '') { input.value = String(PROMO_QTY); renderProductPromo(); }
@@ -412,6 +480,7 @@ function updatePromoBox(box, pcard, pr, res){
   var unitLabel = base ? base[CURR] : '';
   if (res.status === 'applied' && pr.reward && pr.reward.kind === 'percent_off') {
     unitLabel = fmtCurrTotal(res.unitPkrAfterDiscount);
+    setPkrUnder(pcard, res.unitPkrAfterDiscount);
     var pp = pcard.querySelector('.pprice');
     if (pp && base) {
       pp.classList.add('promo-price');
@@ -420,6 +489,8 @@ function updatePromoBox(box, pcard, pr, res){
       pp.appendChild(s);
       pp.appendChild(document.createTextNode(' ' + unitLabel));
     }
+  } else {
+    setPkrUnder(pcard, parseFloat(pcard.dataset.listPkr) || 0);
   }
   var input = box.querySelector('.promo-qty');
   if (input) input.value = String(PROMO_QTY);
@@ -463,7 +534,8 @@ function updatePromoBox(box, pcard, pr, res){
       wa.style.pointerEvents = 'none'; wa.style.opacity = '0.6'; wa.setAttribute('aria-disabled', 'true');
     } else {
       wa.style.pointerEvents = ''; wa.style.opacity = ''; wa.removeAttribute('aria-disabled');
-      wa.href = waLink(pcard, unitLabel, orderLines(res, totalLabel));
+      wa.href = waLinkFor(pcard, res, PROMO_QTY);
+      renderStickyQuestion(pcard, res);
     }
   }
 }
