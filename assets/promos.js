@@ -71,8 +71,8 @@ var UPT_PROMOS = [
    "tool": "Canva",
    "package": "Edu Plan",
    "duration": "Not Stated",
-   "costPkr": 143.2,
-   "listPkr": 179
+   "costPkr": 286.4,
+   "listPkr": 358
   }
  }
 ];
