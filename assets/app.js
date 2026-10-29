@@ -576,3 +576,8 @@ function promoNeedsTick(){
 renderPromos();
 if (promoNeedsTick()) setInterval(promoTick, 1000);
 document.addEventListener('visibilitychange', function(){ if (!document.hidden) { PROMO_LAST_ACTIVE = promoActiveSet(); renderPromos(); } });
+document.addEventListener('click', function(ev){
+  var a = ev.target && ev.target.closest ? ev.target.closest('a[href^="https://wa.me/"]') : null;
+  if (!a || typeof gtag !== 'function') return;
+  gtag('event', 'whatsapp_click', {event_category: 'WhatsApp', event_label: document.title});
+});
