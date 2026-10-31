@@ -4,9 +4,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro - 18 Months Activation Link",
   "duration": "18 Months",
-  "pkr": "Rs 800",
-  "usd": "2.86",
-  "usdt": "2.86",
+  "pkr": "Rs 2200",
+  "usd": "7.86",
+  "usdt": "7.86",
   "details": "Full Google AI Pro plan with 5TB storage. Activation link is included, it activates on your own Google account.",
   "delivery": "Activation link (via WhatsApp)",
   "needs": "Only your Gmail / Google account",
@@ -20,8 +20,8 @@
    "Your own Google on the account activation",
    "18 months long duration"
   ],
-  "pkr_num": "800",
-  "cost_pkr": 640.0,
+  "pkr_num": "2200",
+  "cost_pkr": 1760.0,
   "slug": "gemini-google-ai-pro-pro-18-months-activation-link"
  },
  {
@@ -29,9 +29,9 @@
   "tool": "Gemini (Google AI Pro)",
   "package": "Pro - 3 Months Offer Link",
   "duration": "3 Months",
-  "pkr": "Rs 350",
-  "usd": "1.25",
-  "usdt": "1.25",
+  "pkr": "Rs 500",
+  "usd": "1.79",
+  "usdt": "1.79",
   "details": "A short 3-month plan, activated through an offer link. Price is 'from' (starting price).",
   "delivery": "Offer link (via WhatsApp)",
   "needs": "Only your Gmail",
@@ -44,8 +44,8 @@
    "5TB storage",
    "Short 3-month plan"
   ],
-  "pkr_num": "350",
-  "cost_pkr": 280.0,
+  "pkr_num": "500",
+  "cost_pkr": 400.0,
   "slug": "gemini-google-ai-pro-pro-3-months-offer-link"
  },
  {
