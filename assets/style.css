@@ -11,6 +11,8 @@ header{background:var(--navy);color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.18)}
 .logo .word-pro{color:var(--gold)}
 .logo svg{flex:none}
 .logo img{flex:none;width:34px;height:34px}
+.partner{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+.partner img{flex:none;max-width:240px;height:auto}
 .brand-lock .shackle{transform-box:fill-box;transform-origin:100% 100%;transform:rotate(-32deg)}
 html.intro .brand-lock .shackle{animation:lockopen .6s ease-out forwards}
 @keyframes lockopen{from{transform:rotate(0deg)}to{transform:rotate(-32deg)}}
