@@ -70,7 +70,7 @@ section.bestsellers h2{color:var(--navy);font-size:23px;border-left:6px solid va
 .card .det{font-size:13.5px;color:var(--muted);line-height:1.5;flex:1}
 .card .meta{font-size:12.5px;color:var(--muted)}
 .badge{position:absolute;top:12px;right:12px;background:var(--gold);color:#231a00;font-size:11.5px;font-weight:bold;padding:4px 9px;border-radius:12px}
-.avail{font-size:12px;font-weight:bold;color:var(--teal)}
+.avail{font-size:12px;font-weight:bold;color:var(--teal)}.avail.out{color:#C0392B}
 .price{font-size:20px;font-weight:bold;color:var(--navy)}
 .wa{display:block;text-align:center;background:var(--wa);color:#06310F;font-weight:bold;padding:13px;border-radius:10px;font-size:15px}
 .details-link{display:block;text-align:center;font-size:13.5px;color:var(--teal);font-weight:bold;padding:14px 0}

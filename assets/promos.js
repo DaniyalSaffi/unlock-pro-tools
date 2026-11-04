@@ -7,9 +7,7 @@ var UPT_PROMOS = [
   "strip_text": "10% off Gemini Pro for a limited time.",
   "terms": "10% off Gemini Pro, maximum 5 units per order, during the sale period. Not combinable with other offers.",
   "scope": "same_package",
-  "pids": [
-   "gemini-google-ai-pro-pro-18-months-activation-link"
-  ],
+  "pids": [],
   "reward": {
    "kind": "percent_off",
    "percent": 10,
@@ -38,9 +36,7 @@ var UPT_PROMOS = [
   "strip_text": "Buy 10 of the selected Gemini package and get a Canva Edu Plan free.",
   "terms": "Applies to 10 or more units of the same Gemini package and duration. Free item: Canva Edu Plan x1. Delivered with the same order, subject to availability and seller confirmation. Not combinable with other offers.",
   "scope": "cross_product",
-  "pids": [
-   "gemini-google-ai-pro-pro-18-months-activation-link"
-  ],
+  "pids": [],
   "reward": {
    "kind": "free_item",
    "buy_qty": 10,
