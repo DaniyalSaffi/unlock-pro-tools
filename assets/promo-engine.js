@@ -229,6 +229,12 @@
   }
   function buildOrderMessage(o){
     var NL = String.fromCharCode(10);
+    if (o.unitPkr === 0 && o.totalPkr === 0) {
+      return ["Hello, I'd like to claim my FREE gift from " + (o.brand || 'Unlock Pro Tools') + '.', '',
+        'Product: ' + o.tool, 'Package: ' + o.pkg, 'Duration: ' + o.duration,
+        'Quantity: ' + qtyLine(o.qty, o.freeUnits || 0),
+        'Price: FREE', 'Total: FREE', '', 'Please confirm availability.'].join(NL);
+    }
     var lines = ["Hello, I'd like to order from " + (o.brand || 'Unlock Pro Tools') + '.', ''];
     lines.push('Product: ' + o.tool);
     lines.push('Package: ' + o.pkg);
@@ -285,7 +291,7 @@
     lines.push('Product: ' + o.tool);
     lines.push('Package: ' + o.pkg);
     lines.push('Duration: ' + o.duration);
-    lines.push('Price: ' + dualPrice(o.unitPkr, o.currency, o.rate));
+    lines.push('Price: ' + (o.unitPkr === 0 ? 'FREE' : dualPrice(o.unitPkr, o.currency, o.rate)));
     lines.push('');
     lines.push('Please share more details.');
     return lines.join(NL);

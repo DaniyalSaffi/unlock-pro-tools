@@ -13,6 +13,7 @@ function ceilCent(x){ return Math.ceil(x * 100 - 1e-9) / 100; }
 function compute(card){
   const cost=parseFloat(card.dataset.cost); if(isNaN(cost)) return null;
   const pkr=Math.round(cost*1.25);
+  if (pkr === 0) return {PKR:'FREE',USD:'FREE',USDT:'FREE'};
   return {PKR:'Rs '+money(pkr),USD:'$'+ceilCent(pkr/RATES.usd).toFixed(2),USDT:ceilCent(pkr/RATES.usdt).toFixed(2)+' USDT'};
 }
 function currRate(){ return CURR === 'USD' ? RATES.usd : RATES.usdt; }
@@ -37,6 +38,12 @@ function waLinkFor(card,res,qty){
     return PromoEngine.waUrl('923214378770',msg);
   }
   const NL=String.fromCharCode(10);
+  if (unitPkr === 0 && totalPkr === 0) {
+    const gl=["Hello, I'd like to claim my FREE gift from Unlock Pro Tools.",'','Product: '+card.dataset.tool,
+      'Package: '+card.dataset.package,'Duration: '+card.dataset.duration,'Quantity: '+(qty||1),
+      'Price: FREE','Total: FREE','','Please confirm availability.'];
+    return 'https://wa.me/923214378770?text='+encodeURIComponent(gl.join(NL));
+  }
   const lines=["Hello, I'd like to order from Unlock Pro Tools.",'','Product: '+card.dataset.tool,
     'Package: '+card.dataset.package,'Duration: '+card.dataset.duration,'Quantity: '+(qty||1),
     'Price: PKR '+money(unitPkr),'Total: PKR '+money(totalPkr),'',
@@ -67,13 +74,14 @@ function renderPrices(){
   document.querySelectorAll('a.wa-plan').forEach(a=>{ a.href=waLinkFor({dataset:a.dataset},null,1); });
   document.querySelectorAll('.plan-price').forEach(el=>{
     const pkr=parseFloat(el.dataset.listPkr); if(isNaN(pkr)) return;
+    if (pkr === 0) { el.textContent='FREE'; return; }
     el.textContent=CURR==='PKR' ? 'Rs '+money(pkr) : CURR==='USD' ? '$'+ceilCent(pkr/RATES.usd).toFixed(2) : ceilCent(pkr/RATES.usdt).toFixed(2)+' USDT';
   });
   renderPromos();
 }
 function setPkrUnder(pcard,pkrNum){
   const pu=pcard.querySelector('.pkrunder');
-  if(pu) pu.textContent=CURR==='PKR' ? '' : 'PKR '+money(pkrNum);
+  if(pu) pu.textContent=(CURR==='PKR' || pkrNum===0) ? '' : 'PKR '+money(pkrNum);
 }
 function setCurr(c){
   CURR=c;
@@ -581,3 +589,51 @@ document.addEventListener('click', function(ev){
   if (!a || typeof gtag !== 'function') return;
   gtag('event', 'whatsapp_click', {event_category: 'WhatsApp', event_label: document.title});
 });
+
+// ---- Giveaway claim box (only on the giveaway product page) ----
+(function(){
+  var box=document.getElementById('giveaway-claim'); if(!box) return;
+  var btn=document.getElementById('giveaway-claim-btn');
+  var phone=document.getElementById('giveaway-phone');
+  var out=document.getElementById('giveaway-result');
+  if(!btn||!phone||!out) return;
+  var EP=window.UPT_GIVEAWAY_ENDPOINT||'';
+  function show(html){ out.innerHTML=html; }
+  function escHtml(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  btn.addEventListener('click',function(){
+    var ph=(phone.value||'').trim();
+    if(!ph){ show('<p>Please enter your WhatsApp number.</p>'); return; }
+    if(typeof grecaptcha==='undefined'){ show('<p>The checkbox did not load. Please reload the page and try again.</p>'); return; }
+    var token=grecaptcha.getResponse();
+    if(!token){ show('<p>Please complete the checkbox and try again.</p>'); return; }
+    btn.disabled=true; show('<p>Claiming your gift...</p>');
+    var cb='gw'+Math.floor(Math.random()*1e9);
+    window[cb]=function(d){
+      try{ grecaptcha.reset(); }catch(e){}
+      btn.disabled=false; delete window[cb]; document.body.removeChild(s);
+      if(!d){ show('<p>Something went wrong. Please try again or claim on WhatsApp.</p>'); return; }
+      if(d.ok && d.account){
+        show('<p><b>Your gift is ready.</b> Save these details now. They will not be shown again.</p>'
+          +'<div class="giveaway-account">Email: <code>'+escHtml(d.account.email)+'</code><br>Password: <code>'+escHtml(d.account.password)+'</code><br><button type="button" id="giveaway-copy">Copy details</button></div>'
+          +'<p class="giveaway-note">This account may be shared with other winners.</p>');
+        var cp=document.getElementById('giveaway-copy');
+        if(cp) cp.addEventListener('click',function(){
+          var txt='Email: '+d.account.email+'\nPassword: '+d.account.password;
+          if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(txt); cp.textContent='Copied'; }
+        });
+        return;
+      }
+      var err=d.error||'server_error';
+      if(err==='already_claimed') show('<p>This number already got the giveaway gift.</p>');
+      else if(err==='invalid_phone') show('<p>Please enter a valid WhatsApp number.</p>');
+      else if(err==='captcha_required'||err==='captcha_failed') show('<p>Please complete the checkbox and try again.</p>');
+      else if(err==='busy') show('<p>Please try again in a moment.</p>');
+      else show('<p>Something went wrong. Please try again or claim on WhatsApp.</p>');
+    };
+    var q='action=claim&phone='+encodeURIComponent(ph)+'&g-recaptcha-response='+encodeURIComponent(token);
+    var s=document.createElement('script');
+    s.src=EP+'?callback='+cb+'&'+q;
+    s.onerror=function(){ btn.disabled=false; show('<p>Something went wrong. Please try again or claim on WhatsApp.</p>'); };
+    document.body.appendChild(s);
+  });
+})();

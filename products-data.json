@@ -3289,5 +3289,30 @@
   "pkr_num": "50960",
   "cost_pkr": 40768.0,
   "slug": "batmanstore-bundle-all-in-one-bundle-21-tools"
+ },
+ {
+  "category": "Video Editing",
+  "tool": "CapCut",
+  "package": "7 Day Giveaway",
+  "duration": "7 Days",
+  "pkr": "Rs 0",
+  "usd": "0.00",
+  "usdt": "0.00",
+  "details": "Free CapCut Pro for 7 days - a giveaway gift, one per WhatsApp number.",
+  "delivery": "Claim on this page or on WhatsApp",
+  "needs": "Your WhatsApp number",
+  "availability": "Limited",
+  "best": false,
+  "keywords": "CapCut price in Pakistan, buy CapCut Pakistan, CapCut subscription Pakistan",
+  "logo": "capcut.svg",
+  "features": [
+   "7 days of CapCut Pro access",
+   "One gift per WhatsApp number",
+   "The account may be shared with other winners",
+   "Claim on this page or on WhatsApp"
+  ],
+  "pkr_num": "0",
+  "cost_pkr": 0.0,
+  "slug": "capcut-7-day-giveaway"
  }
 ]
